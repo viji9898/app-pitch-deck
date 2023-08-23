@@ -12,7 +12,7 @@ export const NavBar = () => {
       <Container>
         <Link to="/" style={{ textDecoration: "none" }}>
           <Navbar.Brand>
-            {"starter-app "}
+            {"Pitch Deck "}
             <img
               src={
                 "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tech-for-good/Learn/tfg-logo-01.png"

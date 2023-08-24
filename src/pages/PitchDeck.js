@@ -28,9 +28,6 @@ export const PitchDeck = () => {
       >
         <RegisterInterest />
         <PitchHero />
-        <FormRegister />
-        <Divider />
-
         <Row
           gutter={[18, 18]}
           style={{
@@ -44,7 +41,9 @@ export const PitchDeck = () => {
               style={{ backgroundColor: "#f4f1ed" }}
               title={
                 <div style={{ marginTop: "10px", textAlign: "center" }}>
-                  <h2>CHECKOUT THE PITCH BELOW</h2>
+                  <Col span={24}>
+                    <h2>{"We Help You Build Your Perfect Pitch!"}</h2>
+                  </Col>
                 </div>
               }
             >
@@ -94,6 +93,8 @@ export const PitchDeck = () => {
         </Row>
         <Divider />
         <PitchExamples />
+        <Divider />
+        <FormRegister />
         <Divider />
       </Row>
     </div>

@@ -24,9 +24,7 @@ export const PitchHero = () => {
           Get In Touch With Us
         </Button>
       </Col>
-      <Col span={24}>
-        <h2>{"We Help You Build Your Perfect Pitch!"}</h2>
-      </Col>
+
       <Divider />
     </Row>
   );

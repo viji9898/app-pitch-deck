@@ -2,8 +2,8 @@ import { Avatar, Card, Col, Row, Tag } from "antd";
 
 export const Overview = () => {
   return (
-    <Card style={{ maxWidth: "1050px" }}>
-      <Row gutter={[18, 18]}>
+    <Card style={{ width: "100%" }}>
+      <Row gutter={[18, 18]} justify={"center"}>
         <Col xs={24} sm={24} md={12}>
           <Avatar
             size={64}

@@ -75,7 +75,7 @@ export const Assets = () => {
     <div className="main">
       <Row gutter={[18, 18]} style={{ maxWidth: "900px" }}>
         <Col span={24}>
-          <h1>Collection of Creative Assets for Boiler Plate</h1>
+          <h1>Collection of Creative Assets for Pitch Deck</h1>
           <p>
             {"For feedback "}
             <a href="mailto:hello@techforgood.lk">{"email us"}</a>

@@ -8,25 +8,25 @@ export const Team = () => {
   const { Meta } = Card;
   const founderData = [
     {
-      name: "Viji",
+      name: "Anika W",
       description:
         "Coder Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse auctor dui eu est gravida, at venenatis ",
       social: "",
     },
     {
-      name: "Imran",
+      name: "Chantal S",
       description:
         "Coder Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse auctor dui eu est gravida, at venenatis ",
       social: "",
     },
     {
-      name: "Sachith",
+      name: "Sachith S",
       description:
         "Coder Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse auctor dui eu est gravida, at venenatis ",
       social: "",
     },
     {
-      name: "Anik",
+      name: "Irosh W",
       description:
         "Coder Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse auctor dui eu est gravida, at venenatis ",
       social: "",

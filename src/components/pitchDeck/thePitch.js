@@ -17,12 +17,15 @@ export const ThePitch = () => {
         </Card>
       </Col>
       <Col xs={24} sm={24} md={8}>
-        <Card style={{ height: "100%" }}>
-          <h2>
-            {
-              "``transfer confim companies marketing and sales drive with simple tools, We transfer confim companies marketing and sales drive "
-            }
-          </h2>
+        <Card
+          style={{
+            height: "100%",
+            display: "flex",
+            justifyContent: "center",
+            fontFamily: "monospace",
+          }}
+        >
+          <h2>{`"Our Mission: to upskill a nation!"`}</h2>
         </Card>
       </Col>
       <Col xs={24} sm={24} md={24}>

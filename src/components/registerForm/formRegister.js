@@ -393,7 +393,9 @@ export const FormRegister = () => {
                 </Select>
               </Form.Item>
             </Col>
-            <Divider>{"Getting to know you (optional)"}</Divider>
+            <Divider>
+              {"Getting to know you (optional - super helpful for us!)"}
+            </Divider>
             <Col xs={24} sm={24} md={12}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
@@ -425,7 +427,7 @@ export const FormRegister = () => {
             <Col xs={24} sm={24} md={24}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
-                label="What do you hope to achieve from the program"
+                label="What do you hope to achieve from the program?"
                 name="descriptionExpectations"
                 rules={[
                   {

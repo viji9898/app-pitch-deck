@@ -68,7 +68,7 @@ export const PitchDeck = () => {
                   shape="round"
                 >
                   <SelectOutlined style={{ verticalAlign: "baseline" }} />
-                  {"https://pp.lk/tfg"}
+                  {"https://pd.lk/tfg"}
                 </Button>
                 <br></br>
                 <small>Live Pitch</small>

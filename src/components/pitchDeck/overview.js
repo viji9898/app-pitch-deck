@@ -65,7 +65,14 @@ export const Overview = () => {
         <Col xs={24} sm={24} md={12}>
           <h2>Investment Overview</h2>
 
-          <p>{"Tagert Close: LKR5,000,000"}</p>
+          <p>
+            <strong>{"Tagert Close:"}</strong>
+            {" LKR5,000,000"}
+          </p>
+          <p>
+            <strong>{"Next Step: "}</strong>
+            {"Scaling our impact & building out our tech platform"}
+          </p>
           <a
             target="_blank"
             rel="noreferrer"

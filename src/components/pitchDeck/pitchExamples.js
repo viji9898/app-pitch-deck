@@ -7,17 +7,16 @@ export const PitchExamples = () => {
     {
       alt: "gif of doll house showing a property in 3d",
       src: "https://images.squarespace-cdn.com/content/v1/5e85105860e4d00e03535059/1595262192709-DNMDJRFYXEKFCQGC68M5/Matterport+Dollhouse.gif",
-      avatar: "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      avatar: "https://img.icons8.com/?size=512&id=BEa3DoPM5tos&format=png",
       title: "3d.lk",
-      description:
-        "Aiming to recreate Sri Lanka's Properties in 3-Dimensions - Virtual Tours",
+      description: "Aiming to recreate Sri Lanka's Properties in 3-Dimensions",
       sector: "Property Tech",
       stage: "Seed",
     },
     {
       alt: "gif of a API Service",
       src: "https://i.pinimg.com/originals/bd/e9/79/bde979712f831c4827742c68fa9e87c2.gif",
-      avatar: "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      avatar: "https://img.icons8.com/?size=512&id=cTDO21IUfZIy&format=png",
       title: "DaaS",
       description: "Providing API's for all kinds of Sri Lankan Data ",
       sector: "Data Service",

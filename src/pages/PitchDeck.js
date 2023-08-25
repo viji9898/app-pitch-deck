@@ -6,7 +6,7 @@ import { Overview } from "../components/pitchDeck/overview";
 import { ThePitch } from "../components/pitchDeck/thePitch";
 import { AdditionalInfo } from "../components/pitchDeck/additionalInfo";
 import { Founder } from "../components/pitchDeck/founders";
-import { Team } from "../components/pitchDeck/team";
+import { Advisors } from "../components/pitchDeck/advisors";
 import { InvestmentDetails } from "../components/pitchDeck/investmentDetails";
 import { Interested } from "../components/pitchDeck/interested";
 import { FooterDetails } from "../components/pitchDeck/footerDetails";
@@ -96,7 +96,7 @@ export const PitchDeck = () => {
             <br></br>
             <Founder />
             <br></br>
-            <Team />
+            <Advisors />
             <br></br>
             <InvestmentDetails />
             <br></br>

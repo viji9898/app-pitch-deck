@@ -53,21 +53,26 @@ export const Overview = () => {
 
           <Tag color="#f2b823">{"Pre-Seed"}</Tag>
           <Tag color="cyan">{"EdTech"}</Tag>
+          <Tag color="salmon">{"Impact"}</Tag>
           <h2>techForGood</h2>
           <p>
             {
-              "At Pandyt, we are proud to be a remote-first company. Our team of highly-skilled consultants is dedicated to providing top-notch service and delivering measurable results for our clients, no matter where they are located."
+              "We empower through immersive coding bootcamps, blending tech skills and entrepreneurial mindset. Bridging education and industry, we connect graduates with tech careers, driving individual growth and societal impact."
             }
           </p>
           <Space>{listSocialLinks}</Space>
         </Col>
         <Col xs={24} sm={24} md={12}>
           <h2>Investment Overview</h2>
-          <p>{"Raising: £500,000"}</p>
-          <p>{"Pre-money valuation: £500,000"}</p>
-          <p>{"Scheme: "}</p>
-          <p>{"Tagert Close: £500,000"}</p>
-          <p>{"How: SeedFast"}</p>
+
+          <p>{"Tagert Close: LKR5,000,000"}</p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://en.wikipedia.org/wiki/Simple_agreement_for_future_equity"
+          >
+            {"SAFE Investment Scheme"}
+          </a>
         </Col>
       </Row>
     </Card>

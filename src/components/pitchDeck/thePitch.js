@@ -6,7 +6,7 @@ export const ThePitch = () => {
       <Col xs={24} sm={24} md={16}>
         <Card style={{ margin: "0px", padding: "0px" }}>
           <iframe
-            src="https://player.vimeo.com/video/284809171?h=ad05b53679"
+            src="https://player.vimeo.com/video/857861963?h=9b6bbf4f86&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479"
             title="pitch video"
             width="100%"
             height="360"

@@ -18,7 +18,7 @@ export const AdditionalInfo = () => {
             <h3>VISION</h3>
             <p>
               {
-                "TechBridge's vision is to democratize tech by offering an inclusive coding bootcamp. Our transformative curriculum equips diverse learners with coding skills and problem-solving expertise. With experienced instructors and industry partnerships, we connect graduates to abundant job opportunities, fostering a more representative tech industry. Join us in shaping a future where technology is accessible to all and dreams become reality, one line of code at a time."
+                "Tech For Good is committed to transforming lives through immersive coding bootcamps. Our goal is to empower individuals with technical skills, an entrepreneurial mindset, and connections to launch successful tech careers and drive positive change."
               }
             </p>
           </Col>
@@ -31,7 +31,7 @@ export const AdditionalInfo = () => {
             <h3>PROBLEM</h3>
             <p>
               {
-                "TechBridge's vision is to democratize tech by offering an inclusive coding bootcamp. Our transformative curriculum equips diverse learners with coding skills and problem-solving expertise. With experienced instructors and industry partnerships, we connect graduates to abundant job opportunities, fostering a more representative tech industry. Join us in shaping a future where technology is accessible to all and dreams become reality, one line of code at a time."
+                "Many motivated individuals lack access to quality tech education, hindering their entry into the industry. Traditional education often falls short in providing the necessary skills. Furthermore, the gap between tech skills and entrepreneurship knowledge, coupled with limited industry connections, poses a barrier to career entry."
               }
             </p>
           </Col>
@@ -44,7 +44,7 @@ export const AdditionalInfo = () => {
             <h3>{"SOLUTION"}</h3>
             <p>
               {
-                "TechBridge's vision is to democratize tech by offering an inclusive coding bootcamp. Our transformative curriculum equips diverse learners with coding skills and problem-solving expertise. With experienced instructors and industry partnerships, we connect graduates to abundant job opportunities, fostering a more representative tech industry. Join us in shaping a future where technology is accessible to all and dreams become reality, one line of code at a time."
+                "Tech For Good's solution combines intensive coding bootcamps, entrepreneurship training, and industry partnerships. Our immersive programs equip individuals with coding expertise and an entrepreneurial outlook. By partnering with hiring companies, we create pathways to connect skilled graduates with tech career opportunities, enabling them to thrive in the industry and make meaningful contributions."
               }
             </p>
           </Col>

@@ -1,5 +1,5 @@
-import { Button, Card, Col, Divider, Row } from "antd";
-import { SelectOutlined } from "@ant-design/icons";
+import { Button, Card, Col, Divider, FloatButton, Row } from "antd";
+import { SelectOutlined, UserAddOutlined } from "@ant-design/icons";
 
 import { Background } from "../components/pitchDeck/background";
 import { Overview } from "../components/pitchDeck/overview";
@@ -18,6 +18,18 @@ import { FormRegister } from "../components/registerForm/formRegister";
 export const PitchDeck = () => {
   return (
     <div className="main">
+      <FloatButton
+        icon={<UserAddOutlined />}
+        href="#apply"
+        type="default"
+        description={"Apply"}
+        shape="square"
+        style={{
+          textDecoration: "none",
+          right: 95,
+        }}
+      />
+
       <Row
         gutter={[18, 18]}
         style={{
@@ -58,6 +70,8 @@ export const PitchDeck = () => {
                   <SelectOutlined style={{ verticalAlign: "baseline" }} />
                   {"https://pp.lk/tfg"}
                 </Button>
+                <br></br>
+                <small>Live Pitch</small>
               </div>
             </Card>
           </Col>
@@ -94,6 +108,7 @@ export const PitchDeck = () => {
         <Divider />
         <PitchExamples />
         <Divider />
+        <div id="apply"></div>
         <FormRegister />
         <Divider />
       </Row>

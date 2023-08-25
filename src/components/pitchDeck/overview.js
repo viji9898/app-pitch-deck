@@ -1,6 +1,47 @@
-import { Avatar, Card, Col, Row, Tag } from "antd";
-
+import { Avatar, Card, Col, Row, Space, Tag } from "antd";
+import {
+  HomeOutlined,
+  LinkedinOutlined,
+  InstagramOutlined,
+  FacebookOutlined,
+} from "@ant-design/icons";
 export const Overview = () => {
+  const socialLinks = [
+    {
+      type: "website",
+      url: "https://tfg.lk",
+      icon: <HomeOutlined />,
+    },
+    {
+      type: "linkedin",
+      url: "https://www.linkedin.com/company/techforgood-lk/",
+      icon: <LinkedinOutlined />,
+    },
+    {
+      type: "instagram",
+      url: "https://www.instagram.com/techforgood_lk/",
+      icon: <InstagramOutlined />,
+    },
+    {
+      type: "Facebook",
+      url: "https://www.facebook.com/profile.php?id=100094714128169",
+      icon: <FacebookOutlined />,
+    },
+  ];
+
+  const listSocialLinks = socialLinks.map((data) => {
+    return (
+      <a
+        style={{ fontSize: "20px" }}
+        href={data.url}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {data.icon}
+      </a>
+    );
+  });
+
   return (
     <Card style={{ width: "100%" }}>
       <Row gutter={[18, 18]} justify={"center"}>
@@ -18,9 +59,7 @@ export const Overview = () => {
               "At Pandyt, we are proud to be a remote-first company. Our team of highly-skilled consultants is dedicated to providing top-notch service and delivering measurable results for our clients, no matter where they are located."
             }
           </p>
-          <p>Location: Colombo</p>
-          <p>Employees: 5-10</p>
-          <p>Linkedin - tfg.lk</p>
+          <Space>{listSocialLinks}</Space>
         </Col>
         <Col xs={24} sm={24} md={12}>
           <h2>Investment Overview</h2>

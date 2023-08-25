@@ -18,10 +18,11 @@ export const PitchHero = () => {
       <Col xs={24} sm={24} md={24}>
         <Button
           style={{ backgroundColor: "#181818", color: "#ffff" }}
+          href="#apply"
           size="large"
           shape="round"
         >
-          Get In Touch With Us
+          {"Apply"}
         </Button>
       </Col>
 

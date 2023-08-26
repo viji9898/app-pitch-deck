@@ -61,14 +61,14 @@ export const PitchDeck = () => {
             >
               <div style={{ textAlign: "center" }}>
                 <Button
-                  href="https://pp.lk/tfg"
+                  href="https://pitch.techforgood.lk"
                   target="_blank"
                   rel="nonferrer"
                   size="large"
                   shape="round"
                 >
                   <SelectOutlined style={{ verticalAlign: "baseline" }} />
-                  {"https://pd.lk/tfg"}
+                  {"https://pitch.techforgood.lk"}
                 </Button>
                 <br></br>
                 <small>Live Pitch</small>

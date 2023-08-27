@@ -1,5 +1,5 @@
-import { Button, Card, Col, Divider, FloatButton, Row } from "antd";
-import { SelectOutlined, UserAddOutlined } from "@ant-design/icons";
+import { Card, Col, Divider, FloatButton, Row } from "antd";
+import { UserAddOutlined } from "@ant-design/icons";
 
 import { Background } from "../components/pitchDeck/background";
 import { Overview } from "../components/pitchDeck/overview";
@@ -12,7 +12,6 @@ import { Interested } from "../components/pitchDeck/interested";
 import { FooterDetails } from "../components/pitchDeck/footerDetails";
 import { RegisterInterest } from "../components/pitchDeck/registerInterest";
 import { PitchHero } from "../components/pitchDeck/pitchHero";
-import { PitchExamples } from "../components/pitchDeck/pitchExamples";
 import { FormRegister } from "../components/registerForm/formRegister";
 
 export const PitchDeck = () => {
@@ -35,7 +34,6 @@ export const PitchDeck = () => {
         style={{
           maxWidth: "1128px",
           justifyContent: "center",
-          margin: "10px",
         }}
       >
         <RegisterInterest />
@@ -45,44 +43,16 @@ export const PitchDeck = () => {
           style={{
             maxWidth: "1128px",
             justifyContent: "center",
-            margin: "10px",
           }}
         >
-          <Col span={24}>
-            <Card
-              style={{ backgroundColor: "#f4f1ed" }}
-              title={
-                <div style={{ marginTop: "10px", textAlign: "center" }}>
-                  <Col span={24}>
-                    <h2>{"We Help You Build Your Perfect Pitch!"}</h2>
-                  </Col>
-                </div>
-              }
-            >
-              <div style={{ textAlign: "center" }}>
-                <Button
-                  href="https://pitch.techforgood.lk"
-                  target="_blank"
-                  rel="nonferrer"
-                  size="large"
-                  shape="round"
-                >
-                  <SelectOutlined style={{ verticalAlign: "baseline" }} />
-                  {"https://pitch.techforgood.lk"}
-                </Button>
-                <br></br>
-                <small>Live Pitch</small>
-              </div>
-            </Card>
-          </Col>
           <Background />
           <Card
             style={{
               position: "relative",
               boxShadow: "5px 5px 5px 5px grey",
               justifyContent: "center",
-              top: "-125px",
-              maxWidth: "90%",
+              top: "-100px",
+              maxWidth: "96%",
             }}
           >
             <Overview />
@@ -105,11 +75,11 @@ export const PitchDeck = () => {
             <FooterDetails />
           </Card>
         </Row>
-        <Divider />
-        <PitchExamples />
-        <Divider />
+
         <div id="apply"></div>
+
         <FormRegister />
+
         <Divider />
       </Row>
     </div>

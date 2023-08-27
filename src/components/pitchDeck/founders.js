@@ -33,6 +33,7 @@ export const Founder = () => {
     return (
       <Col xs={24} sm={24} md={8}>
         <Card
+          size="small"
           style={{ height: "100%" }}
           actions={[
             data.linkedin && (

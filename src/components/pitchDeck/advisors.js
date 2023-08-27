@@ -31,6 +31,7 @@ export const Advisors = () => {
     return (
       <Col xs={24} sm={24} md={8}>
         <Card
+          size="small"
           actions={[
             data.linkedin && (
               <a href={data.linkedin} target="_blank" rel="noreferrer">

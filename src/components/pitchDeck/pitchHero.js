@@ -1,5 +1,5 @@
-import { Button, Col, Divider, Row } from "antd";
-
+import { Button, Card, Col, Divider, Row } from "antd";
+import { SelectOutlined } from "@ant-design/icons";
 export const PitchHero = () => {
   return (
     <Row
@@ -25,8 +25,34 @@ export const PitchHero = () => {
           {"Apply"}
         </Button>
       </Col>
-
       <Divider />
+      <Col span={24}>
+        <Card
+          style={{ backgroundColor: "#f4f1ed" }}
+          title={
+            <div style={{ marginTop: "10px", textAlign: "center" }}>
+              <Col span={24}>
+                <h2>{"We Help You Build Your Perfect Pitch!"}</h2>
+              </Col>
+            </div>
+          }
+        >
+          <div style={{ textAlign: "center" }}>
+            <Button
+              href="https://pitch.techforgood.lk"
+              target="_blank"
+              rel="nonferrer"
+              size="large"
+              shape="round"
+            >
+              <SelectOutlined style={{ verticalAlign: "baseline" }} />
+              {"https://pitch.techforgood.lk"}
+            </Button>
+            <br></br>
+            <small>Live Pitch</small>
+          </div>
+        </Card>
+      </Col>
     </Row>
   );
 };

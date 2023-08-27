@@ -1,6 +1,22 @@
-import { Button, Card, Col, Row } from "antd";
+import { Button, Card, Col, Modal, Row } from "antd";
+import { ExclamationCircleFilled } from "@ant-design/icons";
 
 export const Interested = () => {
+  const { confirm } = Modal;
+  const showConfirm = () => {
+    confirm({
+      title: "PitchDeck.lk",
+      icon: <ExclamationCircleFilled />,
+      content: "Checkout the functionality on the live pitch",
+      okText: "Live Pitch",
+      onOk() {
+        window.open("https://pitch.techforgood.lk");
+      },
+      onCancel() {
+        console.log("Cancel");
+      },
+    });
+  };
   return (
     <Card
       style={{ backgroundColor: "#f2b823", color: "white", maxWidth: "1050px" }}
@@ -24,6 +40,7 @@ export const Interested = () => {
             }}
           >
             <Button
+              onClick={showConfirm}
               style={{
                 color: "#f2b823",
                 fontSize: "16px",

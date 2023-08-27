@@ -6,7 +6,7 @@ const CollectionCreateForm = ({ open, onCreate, handleAction }) => {
   return (
     <Modal
       open={open}
-      title="Register Interest"
+      title="Thanks for Viewing Pitchdeck.lk"
       closeIcon
       footer={[
         <Button
@@ -26,7 +26,7 @@ const CollectionCreateForm = ({ open, onCreate, handleAction }) => {
               });
           }}
         >
-          I'm interested
+          {"check out the sample deck below 👇🏾"}
         </Button>,
       ]}
     >

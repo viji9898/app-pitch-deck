@@ -1,4 +1,4 @@
-import { Button, Card, Col, Divider, Row } from "antd";
+import { Button, Card, Col, Row } from "antd";
 import { SelectOutlined } from "@ant-design/icons";
 export const PitchHero = () => {
   return (
@@ -9,7 +9,7 @@ export const PitchHero = () => {
         alignItems: "center",
         justifyContent: "center",
         background: "rgb(225, 225, 219)",
-        paddingTop: "15px",
+        paddingTop: "25px",
         textAlign: "center",
         backgroundImage: `url(https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/background_hero_pitch_deck-01.png)`,
         backgroundSize: "cover",
@@ -19,8 +19,6 @@ export const PitchHero = () => {
         minHeight: "40vh",
         maxWidth: "1200px",
         margin: "0px auto",
-        textAlign: "center",
-        paddingTop: "50px",
       }}
     >
       <Col span={24}>

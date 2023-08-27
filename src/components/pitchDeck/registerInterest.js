@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Button, Form, Input, Modal } from "antd";
+import axios from "axios";
 const CollectionCreateForm = ({ open, onCreate, handleAction }) => {
   const [form] = Form.useForm();
 
@@ -56,7 +57,7 @@ const CollectionCreateForm = ({ open, onCreate, handleAction }) => {
           <Input />
         </Form.Item>
         <Form.Item
-          name="phone"
+          name="number"
           label="Phone Number"
           rules={[
             {
@@ -89,6 +90,27 @@ export const RegisterInterest = () => {
     }
   }, []);
 
+  const success = () => {
+    Modal.success({
+      content: "Thanks for checking us out!!",
+    });
+  };
+
+  const postDiscordMessage = async (values) => {
+    return axios
+      .post(".netlify/functions/postDiscordMessage", {
+        values,
+      })
+      .then((response) => {
+        success(response);
+        handleAction(values);
+      })
+      .catch(function error(error) {
+        const errorMessage = error.response.data;
+        console.log(errorMessage);
+      });
+  };
+
   const handleAction = () => {
     // Perform the action you want to remember here
     // ...
@@ -97,10 +119,9 @@ export const RegisterInterest = () => {
     localStorage.setItem("hasDoneSomething", "true");
     setHasDoneSomething(false); // Update the state to reflect the action
   };
+
   const onCreate = (values) => {
-    console.log("Received values of form: ", values, {
-      companyName: "techForGood",
-    });
+    postDiscordMessage(values);
     setHasDoneSomething(false);
   };
   return (

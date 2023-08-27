@@ -1,6 +1,4 @@
-import { Card, Col, Divider, FloatButton, Row } from "antd";
-import { UserAddOutlined } from "@ant-design/icons";
-
+import { Card, Divider, Row, Col, Button } from "antd";
 import { Background } from "../components/pitchDeck/background";
 import { Overview } from "../components/pitchDeck/overview";
 import { ThePitch } from "../components/pitchDeck/thePitch";
@@ -10,25 +8,15 @@ import { Advisors } from "../components/pitchDeck/advisors";
 import { InvestmentDetails } from "../components/pitchDeck/investmentDetails";
 import { Interested } from "../components/pitchDeck/interested";
 import { FooterDetails } from "../components/pitchDeck/footerDetails";
+
 import { RegisterInterest } from "../components/pitchDeck/registerInterest";
 import { PitchHero } from "../components/pitchDeck/pitchHero";
 import { FormRegister } from "../components/registerForm/formRegister";
+import { SelectOutlined } from "@ant-design/icons";
 
 export const PitchDeck = () => {
   return (
     <div className="main">
-      <FloatButton
-        icon={<UserAddOutlined />}
-        href="#apply"
-        type="default"
-        description={"Apply"}
-        shape="square"
-        style={{
-          textDecoration: "none",
-          right: 95,
-        }}
-      />
-
       <Row
         gutter={[18, 18]}
         style={{
@@ -38,6 +26,25 @@ export const PitchDeck = () => {
       >
         <RegisterInterest />
         <PitchHero />
+
+        <div id="apply-section"></div>
+        <FormRegister />
+
+        <Divider>
+          <Button
+            href="https://pitch.techforgood.lk"
+            target="_blank"
+            rel="nonferrer"
+            size="large"
+            shape="round"
+          >
+            <SelectOutlined style={{ verticalAlign: "baseline" }} />
+            {"https://pitch.techforgood.lk"}
+          </Button>
+          <br></br>
+          <small>Check out this live pitch</small>
+        </Divider>
+
         <Row
           gutter={[18, 18]}
           style={{
@@ -75,12 +82,6 @@ export const PitchDeck = () => {
             <FooterDetails />
           </Card>
         </Row>
-
-        <div id="apply"></div>
-
-        <FormRegister />
-
-        <Divider />
       </Row>
     </div>
   );

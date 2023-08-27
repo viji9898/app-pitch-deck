@@ -15,16 +15,16 @@ export const PitchHero = () => {
         <h1>{"Grow faster"}</h1>
         <h3>{"Ideation. Seeding. Get Funded"}</h3>
       </Col>
-      <Col xs={24} sm={24} md={24}>
+      {/* <Col xs={24} sm={24} md={24}>
         <Button
           style={{ backgroundColor: "#181818", color: "#ffff" }}
-          href="#apply"
+          href="#apply-section"
           size="large"
           shape="round"
         >
           {"Apply"}
         </Button>
-      </Col>
+      </Col> */}
       <Divider />
       <Col span={24}>
         <Card
@@ -49,7 +49,7 @@ export const PitchHero = () => {
               {"https://pitch.techforgood.lk"}
             </Button>
             <br></br>
-            <small>Live Pitch</small>
+            <small>Check out this live pitch</small>
           </div>
         </Card>
       </Col>

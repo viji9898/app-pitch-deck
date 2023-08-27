@@ -1,6 +1,16 @@
-import { Button, Card, Divider, Form, Input, InputNumber, Select } from "antd";
+import {
+  Button,
+  Card,
+  Divider,
+  Form,
+  Input,
+  InputNumber,
+  Select,
+  Modal,
+} from "antd";
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import { Col, Row } from "antd";
+import axios from "axios";
 export const FormRegister = () => {
   const { Option } = Select;
 
@@ -52,10 +62,31 @@ export const FormRegister = () => {
   const listCatagories = catagoryData.map((data) => {
     return <Option value={data.value}>{data.value}</Option>;
   });
+  const success = () => {
+    Modal.success({
+      content: "Application Sent will speak soon!!",
+    });
+  };
+
+  const postDiscordMessage = async (values) => {
+    console.log(values);
+    return axios
+      .post(".netlify/functions/postDiscordApplication", {
+        values,
+      })
+      .then((response) => {
+        success(response);
+      })
+      .catch(function error(error) {
+        const errorMessage = error.response.data;
+        console.log(errorMessage);
+      });
+  };
 
   const onFinish = (values) => {
-    console.log("Success:", values);
+    postDiscordMessage(values);
   };
+
   const onFinishFailed = (errorInfo) => {
     console.log("Failed:", errorInfo);
   };
@@ -396,7 +427,7 @@ export const FormRegister = () => {
             <Divider>
               {"Getting to know you (optional - super helpful for us!)"}
             </Divider>
-            <Col xs={24} sm={24} md={12}>
+            <Col xs={24} sm={24} md={24}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
                 label="How long have the founders known one another and how did you meet? Have any of the founders not met in person?"
@@ -410,7 +441,7 @@ export const FormRegister = () => {
                 <Input.TextArea rows={4} />
               </Form.Item>
             </Col>
-            <Col xs={24} sm={24} md={12}>
+            <Col xs={24} sm={24} md={24}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
                 label="How long have each of you been working on this? How much of that has been full-time? Please explain."
@@ -424,7 +455,7 @@ export const FormRegister = () => {
                 <Input.TextArea rows={4} />
               </Form.Item>
             </Col>
-            <Col xs={24} sm={24} md={24}>
+            {/* <Col xs={24} sm={24} md={24}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
                 label="What do you hope to achieve from the program?"
@@ -437,7 +468,7 @@ export const FormRegister = () => {
               >
                 <Input.TextArea rows={4} />
               </Form.Item>
-            </Col>
+            </Col> */}
             <Col span={24} style={{ textAlign: "center" }}>
               <Form.Item style={{ marginBottom: "0px" }}>
                 <Button

@@ -1,7 +1,7 @@
 import "./App.css";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
+// import ScrollToTop from "./utils/ScrollToTop";
 import { NotFound } from "./utils/notFound";
 import { NavBar } from "./components/navigation/navBar";
 import { Footer } from "./components/navigation/footer";

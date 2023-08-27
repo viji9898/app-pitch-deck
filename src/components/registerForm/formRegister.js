@@ -76,8 +76,23 @@ export const FormRegister = () => {
         values,
       })
       .then((response) => {
-        success(response);
+        // success(response);
         form.resetFields();
+      })
+      .catch(function error(error) {
+        const errorMessage = error.response.data;
+        console.log(errorMessage);
+      });
+  };
+
+  const postApplication = async (values) => {
+    return axios
+      .post(".netlify/functions/postApplication", {
+        params: values,
+      })
+      .then((response) => {
+        success(response);
+        console.log(response);
       })
       .catch(function error(error) {
         const errorMessage = error.response.data;
@@ -87,6 +102,7 @@ export const FormRegister = () => {
 
   const onFinish = (values) => {
     postDiscordMessage(values);
+    postApplication(values);
   };
 
   const onFinishFailed = (errorInfo) => {

@@ -13,6 +13,7 @@ import { Col, Row } from "antd";
 import axios from "axios";
 export const FormRegister = () => {
   const { Option } = Select;
+  const [form] = Form.useForm();
 
   const catagoryData = [
     { value: "Adtech" },
@@ -76,6 +77,7 @@ export const FormRegister = () => {
       })
       .then((response) => {
         success(response);
+        form.resetFields();
       })
       .catch(function error(error) {
         const errorMessage = error.response.data;
@@ -106,7 +108,7 @@ export const FormRegister = () => {
             maxWidth: 900,
           }}
           initialValues={{
-            remember: true,
+            cofounder: [],
           }}
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}

@@ -25,18 +25,21 @@ exports.handler = async (event) => {
       descriptionTimeCommitment,
     } = body.values;
 
+    // listing cofounders in webhook discord format
+
     const listCofounders = cofounder
       ? cofounder.map((data) => {
-          console.log(data.cofounderEmail);
           return {
             name: "Co-founders",
             value: data.cofounderEmail,
             inline: true,
           };
         })
-      : "null";
-
-    console.log(listCofounders);
+      : {
+          name: "Co-founders",
+          value: "null",
+          inline: true,
+        };
 
     // Discord webhook URL
     const webhookURL =

@@ -13,6 +13,7 @@ const CollectionCreateForm = ({ open, onCreate, handleAction }) => {
         <Button
           key="link"
           type="primary"
+          href="#example-pitch-deck"
           onClick={() => {
             form
               .validateFields()

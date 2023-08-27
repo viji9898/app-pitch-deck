@@ -47,6 +47,7 @@ export const PitchDeck = () => {
 
         <Row
           gutter={[18, 18]}
+          id="example-pitch-deck"
           style={{
             maxWidth: "1128px",
             justifyContent: "center",

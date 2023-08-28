@@ -11,7 +11,9 @@ import {
 import { MinusCircleOutlined, PlusOutlined } from "@ant-design/icons";
 import { Col, Row } from "antd";
 import axios from "axios";
+import React from "react";
 export const FormRegister = () => {
+  const formRef = React.useRef(null);
   const { Option } = Select;
   const [form] = Form.useForm();
 
@@ -63,11 +65,16 @@ export const FormRegister = () => {
   const listCatagories = catagoryData.map((data) => {
     return <Option value={data.value}>{data.value}</Option>;
   });
+
+  const onReset = () => {
+    formRef.current?.resetFields();
+  };
+
   const success = () => {
     Modal.success({
       content: "Application Sent will speak soon!!",
     });
-    form.resetFields();
+    onReset();
   };
 
   const postDiscordMessage = async (values) => {
@@ -133,6 +140,7 @@ export const FormRegister = () => {
     >
       <div className="main">
         <Form
+          ref={formRef}
           name="basic"
           layout="vertical"
           initialValues={{

@@ -13,7 +13,6 @@ const CollectionCreateForm = ({ open, onCreate, handleAction }) => {
         <Button
           key="link"
           type="primary"
-          href="#example-pitch-deck"
           onClick={() => {
             form
               .validateFields()
@@ -28,7 +27,7 @@ const CollectionCreateForm = ({ open, onCreate, handleAction }) => {
               });
           }}
         >
-          {"check out the sample deck below 👇🏾"}
+          {"sample deck below 👇🏾"}
         </Button>,
       ]}
     >
@@ -83,7 +82,7 @@ export const RegisterInterest = () => {
   useEffect(() => {
     // Check if the user has already done something in local storage when the component mounts
     const hasDoneSomethingValue = localStorage.getItem("hasDoneSomething");
-    console.log(hasDoneSomethingValue);
+
     if (hasDoneSomethingValue === "true") {
       setHasDoneSomething(false);
     } else {

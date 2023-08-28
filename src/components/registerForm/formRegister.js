@@ -67,6 +67,7 @@ export const FormRegister = () => {
     Modal.success({
       content: "Application Sent will speak soon!!",
     });
+    form.resetFields();
   };
 
   const postDiscordMessage = async (values) => {
@@ -77,7 +78,6 @@ export const FormRegister = () => {
       })
       .then((response) => {
         // success(response);
-        form.resetFields();
       })
       .catch(function error(error) {
         const errorMessage = error.response.data;

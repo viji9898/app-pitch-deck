@@ -20,7 +20,7 @@ export const PitchDeck = () => {
       <Row
         gutter={[18, 18]}
         style={{
-          maxWidth: "1128px",
+          maxWidth: "1280px",
           justifyContent: "center",
         }}
       >
@@ -57,10 +57,10 @@ export const PitchDeck = () => {
           <Card
             style={{
               position: "relative",
-              boxShadow: "5px 5px 5px 5px grey",
+
               justifyContent: "center",
               top: "-100px",
-              maxWidth: "96%",
+              maxWidth: "100%",
             }}
           >
             <Overview />

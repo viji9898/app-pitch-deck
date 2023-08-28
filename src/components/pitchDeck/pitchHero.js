@@ -17,8 +17,8 @@ export const PitchHero = () => {
         backgroundPosition: "center",
         width: "100%",
         minHeight: "40vh",
-        maxWidth: "1200px",
-        margin: "0px auto",
+        maxWidth: "1280px",
+        margin: "0px",
       }}
     >
       <Col span={24}>
@@ -59,13 +59,13 @@ export const PitchHero = () => {
       </Col> */}
 
       <Card
-        style={{ backgroundColor: "white", boxShadow: " 10px 10px 1px #000" }}
+        style={{ backgroundColor: "white", boxShadow: " 5px 5px 1px #000" }}
         title={
-          <div style={{ marginTop: "10px", textAlign: "center" }}>
-            <Col span={24}>
-              <h2>{"We Help You Build Your Perfect Pitch!"}</h2>
-            </Col>
-          </div>
+          <Col span={20}>
+            <div style={{ marginTop: "10px", textAlign: "center" }}>
+              <h2>{"Building the Perfect Pitch!"}</h2>
+            </div>
+          </Col>
         }
       >
         <div style={{ textAlign: "center" }}>

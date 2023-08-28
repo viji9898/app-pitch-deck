@@ -120,16 +120,14 @@ export const FormRegister = () => {
         <Form
           name="basic"
           layout="vertical"
-          style={{
-            maxWidth: 900,
-          }}
           initialValues={{
             cofounder: [],
           }}
+          style={{ maxWidth: "900px" }}
           onFinish={onFinish}
           onFinishFailed={onFinishFailed}
         >
-          <Row gutter={[18, 18]} style={{ maxWidth: "900px" }}>
+          <Row gutter={[18, 18]}>
             <Col span={24}>
               <h2>Startup Application</h2>
             </Col>
@@ -149,6 +147,7 @@ export const FormRegister = () => {
                 <Input placeholder="example ABC Company Pvt Ltd." />
               </Form.Item>
             </Col>
+
             <Col xs={24} sm={24} md={12}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
@@ -180,6 +179,7 @@ export const FormRegister = () => {
                 <Input.TextArea showCount maxLength={150} />
               </Form.Item>
             </Col>
+
             <Col xs={24} sm={24} md={8}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
@@ -292,6 +292,7 @@ export const FormRegister = () => {
                 <Input />
               </Form.Item>
             </Col>
+
             <Col xs={24} sm={24} md={12}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
@@ -323,6 +324,7 @@ export const FormRegister = () => {
                 <Input />
               </Form.Item>
             </Col>
+
             <Col xs={24} sm={24} md={12}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
@@ -362,6 +364,7 @@ export const FormRegister = () => {
                 <InputNumber style={{ width: "100%" }} />
               </Form.Item>
             </Col>
+
             <Col xs={24} sm={24} md={6}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
@@ -424,6 +427,7 @@ export const FormRegister = () => {
                 )}
               </Form.List>
             </Col>
+
             <Col xs={24} sm={24} md={12}>
               <Form.Item
                 style={{ marginBottom: "0px" }}
@@ -442,9 +446,8 @@ export const FormRegister = () => {
                 </Select>
               </Form.Item>
             </Col>
-            <Divider>
-              {"Getting to know you (optional - super helpful for us!)"}
-            </Divider>
+            <Divider>{"Getting to know you (optional)"}</Divider>
+
             <Col xs={24} sm={24} md={24}>
               <Form.Item
                 style={{ marginBottom: "0px" }}

@@ -100,9 +100,24 @@ export const FormRegister = () => {
       });
   };
 
+  const postEmailApplication = async (values) => {
+    return axios
+      .post(".netlify/functions/postEmailApplication", {
+        values,
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .catch(function error(error) {
+        const errorMessage = error.response.data;
+        console.log(errorMessage);
+      });
+  };
+
   const onFinish = (values) => {
     postDiscordMessage(values);
     postApplication(values);
+    postEmailApplication(values);
   };
 
   const onFinishFailed = (errorInfo) => {

@@ -1,18 +1,11 @@
-import { Card, Divider, Row, Col, Button } from "antd";
-import { Background } from "../components/pitchDeck/background";
-import { Overview } from "../components/pitchDeck/overview";
-import { ThePitch } from "../components/pitchDeck/thePitch";
-import { AdditionalInfo } from "../components/pitchDeck/additionalInfo";
-import { Founder } from "../components/pitchDeck/founders";
-import { Advisors } from "../components/pitchDeck/advisors";
-import { InvestmentDetails } from "../components/pitchDeck/investmentDetails";
-import { Interested } from "../components/pitchDeck/interested";
-import { FooterDetails } from "../components/pitchDeck/footerDetails";
+import { Divider, Row, Button } from "antd";
 
 import { RegisterInterest } from "../components/pitchDeck/registerInterest";
 import { PitchHero } from "../components/pitchDeck/pitchHero";
-import { FormRegister } from "../components/registerForm/formRegister";
+
 import { SelectOutlined } from "@ant-design/icons";
+
+import { PitchExamples } from "../components/pitchDeck/pitchExamples";
 
 export const PitchDeck = () => {
   return (
@@ -28,7 +21,7 @@ export const PitchDeck = () => {
         <PitchHero />
 
         <div id="apply-section"></div>
-        <FormRegister />
+        {/* <FormRegister /> */}
 
         <Divider>
           <Button
@@ -44,8 +37,8 @@ export const PitchDeck = () => {
           <br></br>
           <small>Check out this live pitch</small>
         </Divider>
-
-        <Row
+        <PitchExamples />
+        {/* <Row
           gutter={[18, 18]}
           id="example-pitch-deck"
           style={{
@@ -82,7 +75,7 @@ export const PitchDeck = () => {
             <br></br>
             <FooterDetails />
           </Card>
-        </Row>
+        </Row> */}
       </Row>
     </div>
   );

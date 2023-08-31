@@ -29,15 +29,26 @@ export const PitchExamples = () => {
         "https://i.pinimg.com/originals/e1/78/6e/e1786e79b5287e0d6bca2104a8540e5a.png",
       title: "Weligama Bay Marriott",
       description:
-        "Case Study on the Buidling of a 198 Key Marriott Resort & Spa, BOQs, Budgets, Designs etc...",
+        "Case Study on the Buidling of a 198 Key Marriott Resort & Spa",
       sector: "Property Tech",
       openSource: true,
+    },
+    {
+      alt: "gif of doll house showing a property in 3d",
+      src: "https://media2.giphy.com/media/QVUL20w0FwLKnQuX4D/giphy.gif?cid=ecf05e47l7j0xr19h3ekpz3iun0r5bvedfoje22ebaajvrjd&ep=v1_gifs_search&rid=giphy.gif&ct=g",
+      avatar:
+        "https://mo.lk/static/media/hero-mo-caption.b94eba5860de9e5137b36657e7198a9a.svg",
+      title: "MO.LK",
+      description: "Platform for pre-loved goods",
+      sector: "E-commence",
+      openSource: false,
+      stage: "Pre-Seed",
     },
   ];
 
   const listExamples = exampleData.map((data) => {
     return (
-      <Col xs={24} sm={24} md={8}>
+      <Col xs={24} sm={24} md={6}>
         <Card
           hoverable
           style={{
@@ -68,7 +79,7 @@ export const PitchExamples = () => {
   });
 
   return (
-    <Row gutter={[18, 18]}>
+    <Row gutter={[18, 18]} style={{ marginBottom: "25px" }}>
       <Col span={24}>
         <h2>Work in progress... Deploying Soon...</h2>
       </Col>

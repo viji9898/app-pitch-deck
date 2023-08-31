@@ -27,7 +27,7 @@ const CollectionCreateForm = ({ open, onCreate, handleAction }) => {
               });
           }}
         >
-          {"sample deck below 👇🏾"}
+          {"sample pitch below 👇🏾"}
         </Button>,
       ]}
     >

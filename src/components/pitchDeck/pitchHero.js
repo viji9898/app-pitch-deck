@@ -64,11 +64,14 @@ export const PitchHero = () => {
           {"Apply"}
         </Button>
       </Col> */}
-
-      <Card
-        style={{ backgroundColor: "white", boxShadow: " 5px 5px 1px #000" }}
-        title={
-          <Col span={20}>
+      <Col sm={24} xs={24} md={18}>
+        <Card
+          style={{
+            backgroundColor: "white",
+            boxShadow: " 5px 5px 1px #000",
+          }}
+        >
+          <div style={{ textAlign: "center" }}>
             <div
               style={{
                 marginTop: "10px",
@@ -78,24 +81,21 @@ export const PitchHero = () => {
             >
               <h2>{"Building the Perfect Pitch!"}</h2>
             </div>
-          </Col>
-        }
-      >
-        <div style={{ textAlign: "center" }}>
-          <Button
-            href="https://pitch.techforgood.lk"
-            target="_blank"
-            rel="nonferrer"
-            size="large"
-            shape="round"
-          >
-            <SelectOutlined style={{ verticalAlign: "baseline" }} />
-            {"https://pitch.techforgood.lk"}
-          </Button>
-          <br></br>
-          <small>Check out this live pitch</small>
-        </div>
-      </Card>
+            <Button
+              href="https://pitch.techforgood.lk"
+              target="_blank"
+              rel="nonferrer"
+              size="large"
+              shape="round"
+            >
+              <SelectOutlined style={{ verticalAlign: "baseline" }} />
+              {"https://pitch.techforgood.lk"}
+            </Button>
+            <br></br>
+            <small>Check out this live pitch</small>
+          </div>
+        </Card>
+      </Col>
       <Product setFormVisible={setFormVisible} formVisible={formVisible} />
       {formVisible && <FormGetStarted />}
       <br></br>

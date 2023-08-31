@@ -3,7 +3,7 @@ import { Button, Card, Col, Row } from "antd";
 export const Product = ({ setFormVisible, formVisible }) => {
   return (
     <div className="main" style={{ marginBottom: "25px" }}>
-      <Row gutter={[18, 18]}>
+      <Row gutter={[18, 18]} style={{ margin: "5px" }}>
         <Col xs={24} sm={24} md={8}>
           <Card
             style={{

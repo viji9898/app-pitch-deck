@@ -9,7 +9,7 @@ import { PitchExamples } from "../components/pitchDeck/pitchExamples";
 
 export const PitchDeck = () => {
   return (
-    <div className="main">
+    <div className="main" style={{ margin: "25px" }}>
       <Row
         gutter={[18, 18]}
         style={{

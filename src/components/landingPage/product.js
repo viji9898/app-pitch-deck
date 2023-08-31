@@ -1,5 +1,5 @@
 import { Button, Card, Col, Row } from "antd";
-
+import { HeartOutlined } from "@ant-design/icons";
 export const Product = ({ setFormVisible, formVisible }) => {
   return (
     <div className="main" style={{ marginBottom: "25px" }}>
@@ -14,7 +14,7 @@ export const Product = ({ setFormVisible, formVisible }) => {
             title={<h2>Starter</h2>}
           >
             <p>For individuals and teams getting started</p>
-            <p>$0</p>
+            <p style={{ fontSize: "25px" }}>$0</p>
             <p>
               <small>Free Forever</small>
             </p>
@@ -22,9 +22,16 @@ export const Product = ({ setFormVisible, formVisible }) => {
               <p>
                 <strong>Includes:</strong>
               </p>
-              <ul>
-                <li>Your Pitch Page</li>
+              <ul style={{ listStyle: "none", padding: "0px 10px" }}>
+                <li>
+                  <HeartOutlined style={{ verticalAlign: "baseline" }} /> Your
+                  Pitch Page
+                </li>
               </ul>
+              <p>
+                We help you build your pitch, give us the info and will have
+                your pitch up running in 24hours!
+              </p>
             </div>
           </Card>
         </Col>
@@ -38,7 +45,7 @@ export const Product = ({ setFormVisible, formVisible }) => {
             title={<h2>Go Pro</h2>}
           >
             <p>Taking your pitch to the next level!</p>
-            <p>$15/month</p>
+            <p style={{ fontSize: "25px" }}>$15/month</p>
             <p>
               <small>Billed Annually $180</small>
             </p>
@@ -46,13 +53,36 @@ export const Product = ({ setFormVisible, formVisible }) => {
               <p>
                 <strong>Includes:</strong>
               </p>
-              <ul>
-                <li>Your Pitch Page</li>
-                <li>Pitch View Info</li>
-                <li>Request More Info</li>
-                <li>Custom Domain</li>
-                <li>Customised Auto Email response</li>
-                <li>Virtual Data Room with Drive</li>
+              <ul style={{ listStyle: "none", padding: "0px 10px" }}>
+                <li>
+                  <HeartOutlined style={{ verticalAlign: "baseline" }} />{" "}
+                  {" Your Pitch Page"}
+                </li>
+                <li>
+                  {" "}
+                  <HeartOutlined style={{ verticalAlign: "baseline" }} /> Who
+                  viewed my pitch?
+                </li>
+                <li>
+                  {" "}
+                  <HeartOutlined style={{ verticalAlign: "baseline" }} /> User
+                  request for more info
+                </li>
+                <li>
+                  {" "}
+                  <HeartOutlined style={{ verticalAlign: "baseline" }} /> Custom
+                  Domain
+                </li>
+                <li>
+                  {" "}
+                  <HeartOutlined style={{ verticalAlign: "baseline" }} />{" "}
+                  Customised Auto Email response
+                </li>
+                <li>
+                  {" "}
+                  <HeartOutlined style={{ verticalAlign: "baseline" }} />{" "}
+                  Virtual Data Room with Drive
+                </li>
               </ul>
             </div>
           </Card>

@@ -15,7 +15,6 @@ import React from "react";
 export const FormRegister = () => {
   const formRef = React.useRef(null);
   const { Option } = Select;
-  const [form] = Form.useForm();
 
   const catagoryData = [
     { value: "Adtech" },

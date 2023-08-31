@@ -15,14 +15,8 @@ exports.handler = async (event) => {
       founderEmail,
       founderName,
       founderNumber,
-      founderTechnical,
       linkedinUrl,
-      age,
       cofounder,
-      lookingCofounder,
-      gender,
-      descriptionFounders,
-      descriptionTimeCommitment,
     } = body.values;
 
     // listing cofounders in webhook discord format
@@ -100,11 +94,6 @@ exports.handler = async (event) => {
               value: founderName,
               inline: true,
             },
-            {
-              name: "Technical founder?",
-              value: founderTechnical ? "Yes" : "No",
-              inline: true,
-            },
 
             {
               name: "Founder Email",
@@ -121,31 +110,8 @@ exports.handler = async (event) => {
               value: linkedinUrl ? linkedinUrl : "null",
               inline: true,
             },
-            {
-              name: "Age",
-              value: age ? age : "null",
-              inline: true,
-            },
-            {
-              name: "Gender",
-              value: gender ? gender : "null",
-              inline: true,
-            },
-            {
-              name: "Looking for a co-founder?",
-              value: lookingCofounder ? "Yes" : "No",
-            },
+
             ...listCofounders,
-            {
-              name: "How long have the founders known one another and how did you meet? Have any of the founders not met in person?",
-              value: descriptionFounders ? descriptionFounders : "null",
-            },
-            {
-              name: "How long have each of you been working on this? How much of that has been full-time? Please explain.",
-              value: descriptionTimeCommitment
-                ? descriptionTimeCommitment
-                : "null",
-            },
 
             {
               name: "Thanks!",

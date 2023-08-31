@@ -11,8 +11,8 @@ export const Product = ({ setFormVisible, formVisible }) => {
               boxShadow: " 5px 5px 1px #000",
               fontFamily: "Montserrat",
             }}
+            title={<h2>Starter</h2>}
           >
-            <h2>Starter</h2>
             <p>For individuals and teams getting started</p>
             <p>$0</p>
             <p>
@@ -35,8 +35,8 @@ export const Product = ({ setFormVisible, formVisible }) => {
               boxShadow: " 5px 5px 1px #000",
               fontFamily: "Montserrat",
             }}
+            title={<h2>Go Pro</h2>}
           >
-            <h2>Go Pro</h2>
             <p>Taking your pitch to the next level!</p>
             <p>$15/month</p>
             <p>
@@ -64,8 +64,8 @@ export const Product = ({ setFormVisible, formVisible }) => {
               boxShadow: " 5px 5px 1px #000",
               fontFamily: "Montserrat",
             }}
+            title={<h2>Enterprise</h2>}
           >
-            <h2>Enterprise</h2>
             <p>Building out a customised requirements</p>
             <div style={{ textAlign: "left" }}>
               <p>

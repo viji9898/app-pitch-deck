@@ -45,9 +45,9 @@ export const Product = ({ setFormVisible, formVisible }) => {
             title={<h2>Go Pro</h2>}
           >
             <p>Taking your pitch to the next level!</p>
-            <p style={{ fontSize: "25px" }}>$250/month</p>
+            <p style={{ fontSize: "25px" }}>$250</p>
             <p>
-              <small></small>
+              <small>One Time Payment</small>
             </p>
             <div style={{ textAlign: "left" }}>
               <p>

@@ -14,13 +14,16 @@ import { NotFound } from "../utils/notFound";
 import { Interested } from "../components/pitchDeck/interested";
 
 export const DynamicPitch = () => {
-  const { pitchId } = useParams();
+  const { pitchUrl } = useParams();
   const [pitchData, setPitchData] = useState({
-    pitchId: "",
+    pitchUrl: "",
     pitchMaterial: "",
     additionalInfo: "",
     advisorData: [],
     founderData: [],
+    interested: {
+      backgroundColor: "",
+    },
     overview: {
       companyName: "",
       description: "",
@@ -39,10 +42,10 @@ export const DynamicPitch = () => {
 
   useEffect(() => {
     const selectedPitch = companyPitchData.find(
-      (data) => data.pitchId === pitchId
+      (data) => data.pitchUrl === pitchUrl
     );
     setPitchData(selectedPitch);
-  }, [pitchId]);
+  }, [pitchUrl]);
   console.log(pitchData);
   return (
     <div className="main" style={{ margin: "15px" }}>

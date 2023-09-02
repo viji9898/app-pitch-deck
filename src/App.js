@@ -17,7 +17,7 @@ function App() {
       <Routes>
         <Route exact path="/" element={<PitchDeck />} />
         <Route exact path="/assets" element={<Assets />} />
-        <Route path="in/:pitchId" element={<DynamicPitch />} />
+        <Route path="in/:pitchUrl" element={<DynamicPitch />} />
         <Route exact path="/*" element={<NotFound />} />
       </Routes>
     </Router>

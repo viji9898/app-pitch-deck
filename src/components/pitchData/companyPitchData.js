@@ -9,6 +9,7 @@ import { Col, Row } from "antd";
 export const companyPitchData = [
   {
     pitchId: "123456",
+    pitchUrl: "tech-for-good",
     advisorData: [
       {
         name: "Chantal S",

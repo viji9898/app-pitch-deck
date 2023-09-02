@@ -1,4 +1,4 @@
-import { Card, Col, Row } from "antd";
+import { Card } from "antd";
 
 export const InvestmentDetails = ({ investmentDetails }) => {
   return (

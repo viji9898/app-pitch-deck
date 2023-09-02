@@ -6,6 +6,7 @@ import { PitchHero } from "../components/pitchDeck/pitchHero";
 import { SelectOutlined } from "@ant-design/icons";
 
 import { PitchExamples } from "../components/pitchDeck/pitchExamples";
+import { Footer } from "../components/navigation/footer";
 
 export const PitchDeck = () => {
   return (
@@ -76,6 +77,7 @@ export const PitchDeck = () => {
             <FooterDetails />
           </Card>
         </Row> */}
+        <Footer />
       </Row>
     </div>
   );

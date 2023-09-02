@@ -1,33 +1,13 @@
 import { Avatar, Card, Col, Row, Space, Tag } from "antd";
-import {
-  HomeOutlined,
-  LinkedinOutlined,
-  InstagramOutlined,
-  FacebookOutlined,
-} from "@ant-design/icons";
-export const Overview = () => {
-  const socialLinks = [
-    {
-      type: "website",
-      url: "https://tfg.lk",
-      icon: <HomeOutlined />,
-    },
-    {
-      type: "linkedin",
-      url: "https://www.linkedin.com/company/techforgood-lk/",
-      icon: <LinkedinOutlined />,
-    },
-    {
-      type: "instagram",
-      url: "https://www.instagram.com/techforgood_lk/",
-      icon: <InstagramOutlined />,
-    },
-    {
-      type: "Facebook",
-      url: "https://www.facebook.com/profile.php?id=100094714128169",
-      icon: <FacebookOutlined />,
-    },
-  ];
+export const Overview = ({ pitchData }) => {
+  const {
+    companyName,
+    socialLinks,
+    companyAvatar,
+    description,
+    investmentOverviewDescription,
+    tags,
+  } = pitchData.overview;
 
   const listSocialLinks = socialLinks.map((data) => {
     return (
@@ -41,45 +21,24 @@ export const Overview = () => {
       </a>
     );
   });
+  const listTags = tags.map((data) => {
+    return <Tag color={data.color}>{data.title}</Tag>;
+  });
 
   return (
     <Card style={{ width: "100%" }}>
       <Row gutter={[18, 18]} justify={"center"}>
         <Col xs={24} sm={24} md={12}>
-          <Avatar
-            size={64}
-            src="https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tech-for-good/Learn/gmail-profile-pic-500px.png"
-          />
+          <Avatar size={64} src={companyAvatar} />
 
-          <Tag color="#f2b823">{"Pre-Seed"}</Tag>
-          <Tag color="cyan">{"EdTech"}</Tag>
-          <Tag color="salmon">{"Impact"}</Tag>
-          <h2>techForGood</h2>
-          <p>
-            {
-              "We empower through immersive coding bootcamps, blending tech skills and entrepreneurial mindset. Bridging education and industry, we connect graduates with tech careers, driving individual growth and societal impact."
-            }
-          </p>
+          {listTags}
+          <h2>{companyName}</h2>
+          <p>{description}</p>
           <Space>{listSocialLinks}</Space>
         </Col>
         <Col xs={24} sm={24} md={12}>
           <h2>Investment Overview</h2>
-
-          <p>
-            <strong>{"Tagert Close:"}</strong>
-            {" LKR5,000,000"}
-          </p>
-          <p>
-            <strong>{"Next Step: "}</strong>
-            {"Scaling our impact & building out our tech platform"}
-          </p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://en.wikipedia.org/wiki/Simple_agreement_for_future_equity"
-          >
-            {"SAFE Investment Scheme"}
-          </a>
+          {investmentOverviewDescription}
         </Col>
       </Row>
     </Card>

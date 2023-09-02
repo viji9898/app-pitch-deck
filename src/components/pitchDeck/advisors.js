@@ -4,30 +4,10 @@ import {
   FacebookOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
-export const Advisors = () => {
+export const Advisors = ({ advisorData }) => {
   const { Meta } = Card;
-  const founderData = [
-    {
-      name: "Chantal S",
-      description:
-        "Focus on Social protection with experience at the intersection of the international humanitarian and development spaces gained working with governments, NGOs and international organizations in both field and HQ positions.",
-      social: "",
-      linkedin: "https://www.linkedin.com/in/chantal-sirisena/",
-      avatarUrl:
-        "https://media.licdn.com/dms/image/D4D03AQFH9Z5rVSQqjw/profile-displayphoto-shrink_200_200/0/1664619626301?e=1698278400&v=beta&t=Man4wOyO50ols3UiTVp_ZR0BQD8QJPGbtmRbiAAdnKo",
-    },
-    {
-      name: "Nahil W",
-      description:
-        "Chairman and CEO at East - West Group of Companies, working of social projects and supporting social enterprises through my foundation.",
-      social: "",
-      linkedin: "https://www.linkedin.com/in/nahil-wijesuriya-a3876622/",
-      avatarUrl:
-        "https://media.licdn.com/dms/image/C4D03AQF0QfLR1OCOcg/profile-displayphoto-shrink_200_200/0/1516980937791?e=1698278400&v=beta&t=RLRq4TX-kbbvnCgpXlS_k4IY-BCQykoOIBmhCtoz8rQ",
-    },
-  ];
 
-  const listFounders = founderData.map((data) => {
+  const listFounders = advisorData.map((data) => {
     return (
       <Col xs={24} sm={24} md={8}>
         <Card

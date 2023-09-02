@@ -1,7 +1,8 @@
 import { Button, Card, Col, Modal, Row } from "antd";
 import { ExclamationCircleFilled } from "@ant-design/icons";
 
-export const Interested = () => {
+export const Interested = ({ interested }) => {
+  const { backgroundColor } = interested;
   const { confirm } = Modal;
   const showConfirm = () => {
     confirm({
@@ -19,7 +20,11 @@ export const Interested = () => {
   };
   return (
     <Card
-      style={{ backgroundColor: "#f2b823", color: "white", maxWidth: "1050px" }}
+      style={{
+        backgroundColor: backgroundColor,
+        color: "white",
+        width: "100%",
+      }}
     >
       <Row gutter={[18, 18]}>
         <Col xs={24} sm={24} md={12}>
@@ -42,7 +47,7 @@ export const Interested = () => {
             <Button
               onClick={showConfirm}
               style={{
-                color: "#f2b823",
+                color: backgroundColor,
                 fontSize: "16px",
                 width: "50%",
               }}

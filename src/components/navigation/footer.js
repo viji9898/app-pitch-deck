@@ -50,7 +50,7 @@ export const Footer = () => {
         display: "flex",
       }}
     >
-      <Row gutter={[18, 18]} style={{ margin: "20px", maxWidth: "900px" }}>
+      <Row gutter={[18, 18]} style={{ margin: "20px", maxWidth: "100%" }}>
         <Divider></Divider>
         <Col xs={24} sm={24} md={8} style={{ fontFamily: "Montserrat" }}>
           <p style={{ fontWeight: "900" }}>pitch-deck!</p>

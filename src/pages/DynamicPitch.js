@@ -66,7 +66,7 @@ export const DynamicPitch = () => {
           <Founder founderData={pitchData.founderData} />
           <Advisors advisorData={pitchData.advisorData} />
           <InvestmentDetails investmentDetails={pitchData.investmentDetails} />
-          <Interested interested={pitchData.interested} />
+          <Interested interested={pitchData.interested} paid={pitchData.paid} />
           <FooterDetails />
         </Row>
       ) : (

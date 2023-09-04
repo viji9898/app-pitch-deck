@@ -1,7 +1,7 @@
 import { Button, Card, Col, Modal, Row } from "antd";
 import { ExclamationCircleFilled } from "@ant-design/icons";
 
-export const Interested = ({ interested }) => {
+export const Interested = ({ interested, paid }) => {
   const { backgroundColor } = interested;
   const { confirm } = Modal;
   const showConfirm = () => {
@@ -44,18 +44,33 @@ export const Interested = ({ interested }) => {
               height: "100%",
             }}
           >
-            <Button
-              onClick={showConfirm}
-              style={{
-                color: backgroundColor,
-                fontSize: "16px",
-                width: "50%",
-              }}
-              size="large"
-              shape="round"
-            >
-              I'm Interest
-            </Button>
+            {paid ? (
+              <Button
+                onClick={showConfirm}
+                style={{
+                  color: backgroundColor,
+                  fontSize: "16px",
+                  width: "50%",
+                }}
+                size="large"
+                shape="round"
+              >
+                I'm Interest
+              </Button>
+            ) : (
+              <Button
+                href={`mailto:${interested.emailFounder}`}
+                style={{
+                  color: backgroundColor,
+                  fontSize: "16px",
+                  width: "50%",
+                }}
+                size="large"
+                shape="round"
+              >
+                {interested.emailFounder}
+              </Button>
+            )}
           </div>
         </Col>
       </Row>

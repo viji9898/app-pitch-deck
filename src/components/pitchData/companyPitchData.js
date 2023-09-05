@@ -173,6 +173,7 @@ export const companyPitchData = [
     pitchUrl: "viso",
     metaTags: {
       ogTitle: "Viso - Pitch Deck",
+      lastModified: "2023-09-05 11:05:53 UTC",
       ogImage:
         "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/og-imge-pitch-deck.png",
       ogUrl: "https://pd/in/viso",
@@ -361,6 +362,7 @@ export const companyPitchData = [
     pitchUrl: "template",
     metaTags: {
       ogTitle: "template - Pitch Deck",
+      lastModified: "2023-09-05 11:05:53 UTC",
       ogImage:
         "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/og-image-template-pitch-deck.png",
       ogUrl: "https://pd/in/template",

@@ -4,7 +4,7 @@ import {
   InstagramOutlined,
   FacebookOutlined,
 } from "@ant-design/icons";
-import { Col, Row } from "antd";
+import { Alert, Col, Row } from "antd";
 
 export const companyPitchData = [
   {
@@ -182,8 +182,13 @@ export const companyPitchData = [
     paid: false,
     overview: {
       companyName: "Viso",
-      description:
-        "Begin with a brief introduction of your company and its background. Mention when and why the company was founded. Highlight any notable achievements or milestones.",
+      description: (
+        <Alert
+          message="Guidance"
+          description="Begin with a brief introduction of your company and its background. Mention when and why the company was founded. Highlight any notable achievements or milestones."
+          type="info"
+        />
+      ),
       socialLinks: [
         {
           type: "website",
@@ -366,10 +371,17 @@ export const companyPitchData = [
       ogDescription: "Template deck showing the outline of a pitch deck",
     },
     paid: false,
+    background:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/pitch-deck-template-banner-01.png",
     overview: {
       companyName: "Your-Company-Name",
-      description:
-        "Begin with a brief introduction of your company and its background. Mention when and why the company was founded. Highlight any notable achievements or milestones.",
+      description: (
+        <Alert
+          message="Guidance:"
+          description="Begin with a brief introduction of your company and its background. Mention when and why the company was founded. Highlight any notable achievements or milestones."
+          type="info"
+        />
+      ),
       socialLinks: [
         {
           type: "website",
@@ -409,60 +421,106 @@ export const companyPitchData = [
         },
       ],
       investmentOverviewDescription: (
-        <div>
-          <p>
-            <strong>{"Tagert Close:"}</strong>
-            {
-              "Mention how much your trying to raise, remember your investor will want a breakdown of your expenditure"
-            }
-          </p>
-          <p>
-            <strong>{"Next Step: "}</strong>
-            {"You can give an overview of how you plan to utilise the funds"}
-          </p>
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href="https://en.wikipedia.org/wiki/Simple_agreement_for_future_equity"
-          >
-            {"SAFE Investment Scheme"}
-          </a>
-        </div>
+        <Alert
+          message="Guidance:"
+          description={
+            <div>
+              <p>
+                <strong>{"Tagert Close:"}</strong>
+                {
+                  "Mention how much your trying to raise, remember your investor will want a breakdown of your expenditure"
+                }
+              </p>
+              <p>
+                <strong>{"Next Step: "}</strong>
+                {
+                  "You can give an overview of how you plan to utilise the funds"
+                }
+              </p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://en.wikipedia.org/wiki/Simple_agreement_for_future_equity"
+              >
+                {"SAFE Investment Scheme"}
+              </a>
+            </div>
+          }
+          type="warning"
+        />
       ),
+    },
+    pitchMaterial: {
+      mission: (
+        <Alert
+          message="Guidance:"
+          description={`"You Company Tagline Here", keep it concise and description`}
+          type="info"
+        />
+      ),
+      pitchVideoDesktop: "https://player.vimeo.com/video/87110435?h=f253e737bd",
+      pitchVideoMobie: "https://player.vimeo.com/video/829691380?h=fc6c6c52d9",
+      pitchSlidesDesktop:
+        "https://docs.google.com/presentation/d/e/2PACX-1vQYZrL8VPm-J9I2Naru4_vm1uLc_TfV2-F1SLVQjoR1AuHnFHgo-V71aGymH4P4l7eL_b4eqdlIzTMb/embed?start=false&loop=false&delayms=3000",
+      pitchSlidesMobile:
+        "https://docs.google.com/presentation/d/e/2PACX-1vQczXbfp6UXW7WJo5m20PvlyWaUwrzivV92HIASDp58nilmL4c7_7AzRgrcTc-P533WRlTEyHfS3wen/embed?start=false&loop=false&delayms=3000",
     },
     additionalInfo: {
       vision: (
-        <div>
-          <p>
-            {"Here are a few examples of well-known company vision statements:"}
-          </p>
-          <ul>
-            <li>
-              <b>{"Google: "}</b>
-              {"To provide access to the world's information in one click."}
-            </li>
-            <li>
-              <b>{"Tesla: "}</b>
-              {
-                "To create the most compelling car company of the 21st century by driving the world's transition to electric vehicles."
-              }
-            </li>
-            <li>
-              <b>{"Microsoft: "}</b>
-              {
-                "Empower every person and every organization on the planet to achieve more."
-              }
-            </li>
-            <li>
-              <b>{"techForGood: "}</b>
-              {"UpSkill a Nation"}
-            </li>
-          </ul>
-        </div>
+        <Alert
+          message="Guidance:"
+          description={
+            <div>
+              <p>
+                {
+                  "Here are a few examples of well-known company vision statements:"
+                }
+              </p>
+              <ul>
+                <li>
+                  <b>{"Google: "}</b>
+                  {"To provide access to the world's information in one click."}
+                </li>
+                <li>
+                  <b>{"Tesla: "}</b>
+                  {
+                    "To create the most compelling car company of the 21st century by driving the world's transition to electric vehicles."
+                  }
+                </li>
+                <li>
+                  <b>{"Microsoft: "}</b>
+                  {
+                    "Empower every person and every organization on the planet to achieve more."
+                  }
+                </li>
+                <li>
+                  <b>{"techForGood: "}</b>
+                  {"UpSkill a Nation"}
+                </li>
+              </ul>
+            </div>
+          }
+          type="info"
+        />
       ),
-      problem: `A problem statement is a concise description of an issue, challenge, or obstacle that needs to be addressed or solved. It serves as a clear and specific articulation of the problem at hand, making it easier for individuals or organizations to understand, analyze, and ultimately work toward finding a solution.`,
-      solution:
-        "A solution statement is a concise and clear description of the proposed solution to a problem or challenge that has been previously identified through a problem statement. It outlines the actions, strategies, or methods that will be implemented to address and resolve the problem effectively.",
+
+      problem: (
+        <Alert
+          message="Guidance:"
+          description={`A problem statement is a concise description of an issue, challenge, or obstacle that needs to be addressed or solved. It serves as a clear and specific articulation of the problem at hand, making it easier for individuals or organizations to understand, analyze, and ultimately work toward finding a solution.`}
+          type="info"
+        />
+      ),
+
+      solution: (
+        <Alert
+          message="Guidance:"
+          description={
+            "A solution statement is a concise and clear description of the proposed solution to a problem or challenge that has been previously identified through a problem statement. It outlines the actions, strategies, or methods that will be implemented to address and resolve the problem effectively."
+          }
+          type="info"
+        />
+      ),
     },
     advisorData: [
       {
@@ -506,17 +564,6 @@ export const companyPitchData = [
           "https://media.licdn.com/dms/image/D5603AQHOaNnbredo7w/profile-displayphoto-shrink_200_200/0/1674912962387?e=1698278400&v=beta&t=vnC07emdnVBa9TuYbv5SqDByj0SGSdAnRTmaq6ndG8Q",
       },
     ],
-    pitchMaterial: {
-      mission: `"You Company Tagline Here"`,
-      pitchVideoDesktop: "https://player.vimeo.com/video/87110435?h=f253e737bd",
-      pitchVideoMobie: "https://player.vimeo.com/video/829691380?h=fc6c6c52d9",
-      pitchSlidesDesktop:
-        "https://docs.google.com/presentation/d/e/2PACX-1vQYZrL8VPm-J9I2Naru4_vm1uLc_TfV2-F1SLVQjoR1AuHnFHgo-V71aGymH4P4l7eL_b4eqdlIzTMb/embed?start=false&loop=false&delayms=3000",
-      pitchSlidesMobile:
-        "https://docs.google.com/presentation/d/e/2PACX-1vQczXbfp6UXW7WJo5m20PvlyWaUwrzivV92HIASDp58nilmL4c7_7AzRgrcTc-P533WRlTEyHfS3wen/embed?start=false&loop=false&delayms=3000",
-    },
-    background:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/pitch-deck-template-banner-01.png",
 
     interested: {
       companyName: "Your-Company-Name",

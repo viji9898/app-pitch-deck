@@ -6,13 +6,14 @@ import { InvestmentDetails } from "../components/pitchDeck/investmentDetails";
 import { FooterDetails } from "../components/pitchDeck/footerDetails";
 import { useEffect, useState } from "react";
 import { companyPitchData } from "../components/pitchData/companyPitchData";
-import { Row } from "antd";
+import { Card, Row } from "antd";
 import { ThePitch } from "../components/pitchDeck/thePitch";
 import { Founder } from "../components/pitchDeck/founders";
 import { Advisors } from "../components/pitchDeck/advisors";
 import { NotFound } from "../utils/notFound";
 import { Interested } from "../components/pitchDeck/interested";
 import { DynamicMetaTags } from "../utils/dynamicMetaTags";
+import { Resources } from "../components/pitchDeck/resources";
 
 export const DynamicPitch = () => {
   const { pitchUrl } = useParams();
@@ -67,15 +68,23 @@ export const DynamicPitch = () => {
           }}
         >
           <DynamicMetaTags metaTags={pitchData.metaTags} />
-          <Background background={pitchData.background} />
-          <Overview pitchData={pitchData} />
-          <ThePitch pitchMaterial={pitchData.pitchMaterial} />
-          <AdditionalInfo additionalInfo={pitchData.additionalInfo} />
-          <Founder founderData={pitchData.founderData} />
-          <Advisors advisorData={pitchData.advisorData} />
-          <InvestmentDetails investmentDetails={pitchData.investmentDetails} />
-          <Interested interested={pitchData.interested} paid={pitchData.paid} />
-          <FooterDetails />
+          {pitchUrl === "template" && <Resources />}
+          <Card>
+            <Background background={pitchData.background} />
+            <Overview pitchData={pitchData} />
+            <ThePitch pitchMaterial={pitchData.pitchMaterial} />
+            <AdditionalInfo additionalInfo={pitchData.additionalInfo} />
+            <Founder founderData={pitchData.founderData} />
+            <Advisors advisorData={pitchData.advisorData} />
+            <InvestmentDetails
+              investmentDetails={pitchData.investmentDetails}
+            />
+            <Interested
+              interested={pitchData.interested}
+              paid={pitchData.paid}
+            />
+            <FooterDetails />
+          </Card>
         </Row>
       ) : (
         <NotFound />

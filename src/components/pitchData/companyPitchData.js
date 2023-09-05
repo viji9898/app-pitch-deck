@@ -180,6 +180,8 @@ export const companyPitchData = [
         "Viso Eduhub, which provides comprehensive information on courses offered by both government and private institutes. Our platform make it easier for students to search and find the courses they need. Additionally, we are a Level 1 seller on the Fiverr platform. In addition to our website, we are currently developing a school database management system.",
     },
     paid: false,
+    background:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/placeholder-image-1050-390.png",
     overview: {
       companyName: "Viso",
       description: (
@@ -283,48 +285,45 @@ export const companyPitchData = [
       solution:
         "A solution statement is a concise and clear description of the proposed solution to a problem or challenge that has been previously identified through a problem statement. It outlines the actions, strategies, or methods that will be implemented to address and resolve the problem effectively.",
     },
-    advisorData: [
-      {
-        name: "Chantal S",
-        description:
-          "Focus on Social protection with experience at the intersection of the international humanitarian and development spaces gained working with governments, NGOs and international organizations in both field and HQ positions.",
-        social: "",
-        linkedin: "https://www.linkedin.com/in/chantal-sirisena/",
-        avatarUrl:
-          "https://media.licdn.com/dms/image/D4D03AQFH9Z5rVSQqjw/profile-displayphoto-shrink_200_200/0/1664619626301?e=1698278400&v=beta&t=Man4wOyO50ols3UiTVp_ZR0BQD8QJPGbtmRbiAAdnKo",
-      },
-      {
-        name: "Nahil W",
-        description:
-          "Chairman and CEO at East - West Group of Companies, working of social projects and supporting social enterprises through my foundation.",
-        social: "",
-        linkedin: "https://www.linkedin.com/in/nahil-wijesuriya-a3876622/",
-        avatarUrl:
-          "https://media.licdn.com/dms/image/C4D03AQF0QfLR1OCOcg/profile-displayphoto-shrink_200_200/0/1516980937791?e=1698278400&v=beta&t=RLRq4TX-kbbvnCgpXlS_k4IY-BCQykoOIBmhCtoz8rQ",
-      },
-    ],
     founderData: [
       {
-        name: "Viji W",
-        description:
-          "I am coder and I am passionate about teaching tech and upskill people into a career in tech",
-        linkedin: "https://www.linkedin.com/in/vijiw/",
+        name: "your name",
+        description: "Talk about yourself and your experience ",
+        linkedin: "https://www.linkedin.com/",
         facebook: false,
         twitter: "",
         social: "",
-        avatarUrl:
-          "https://media.licdn.com/dms/image/C4D03AQGQgyGQIQW5Hw/profile-displayphoto-shrink_200_200/0/1663690442529?e=1698278400&v=beta&t=O4DvcduPgOYFL1D2GX97lPG3UmK9xtrsZ3F7ZiZxhws",
+        avatarUrl: "https://robohash.org/viji",
       },
       {
-        name: "Imran H",
-        description:
-          "Coder Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse auctos ",
+        name: "CTO person",
+        description: "Talk about yourself and your experience ",
         social: "",
-        linkedin: "https://www.linkedin.com/in/imranhishaam/",
-        avatarUrl:
-          "https://media.licdn.com/dms/image/D5603AQHOaNnbredo7w/profile-displayphoto-shrink_200_200/0/1674912962387?e=1698278400&v=beta&t=vnC07emdnVBa9TuYbv5SqDByj0SGSdAnRTmaq6ndG8Q",
+        linkedin: "https://www.linkedin.com/",
+        avatarUrl: "https://robohash.org/imran",
       },
     ],
+    advisorData: [
+      {
+        name: "your advisor",
+        description: "Talk about advisors experience",
+        linkedin: "https://www.linkedin.com/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl: "https://robohash.org/chantal",
+      },
+      {
+        name: "your advisor",
+        description: "Talk about advisors experience",
+        linkedin: "https://www.linkedin.com/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl: "https://robohash.org/sirisena",
+      },
+    ],
+
     pitchMaterial: {
       mission: `"You Company Tagline Here"`,
       pitchVideoDesktop: "https://player.vimeo.com/video/87110435?h=f253e737bd",
@@ -334,9 +333,6 @@ export const companyPitchData = [
       pitchSlidesMobile:
         "https://docs.google.com/presentation/d/e/2PACX-1vQczXbfp6UXW7WJo5m20PvlyWaUwrzivV92HIASDp58nilmL4c7_7AzRgrcTc-P533WRlTEyHfS3wen/embed?start=false&loop=false&delayms=3000",
     },
-    background:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/pitch-deck-template-banner-01.png",
-
     interested: {
       companyName: "Your-Company-Name",
       discordWebhook:
@@ -372,7 +368,7 @@ export const companyPitchData = [
     },
     paid: false,
     background:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/pitch-deck-template-banner-01.png",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/placeholder-image-1050-390.png",
     overview: {
       companyName: "Your-Company-Name",
       description: (
@@ -522,46 +518,42 @@ export const companyPitchData = [
         />
       ),
     },
-    advisorData: [
-      {
-        name: "Chantal S",
-        description:
-          "Focus on Social protection with experience at the intersection of the international humanitarian and development spaces gained working with governments, NGOs and international organizations in both field and HQ positions.",
-        social: "",
-        linkedin: "https://www.linkedin.com/in/chantal-sirisena/",
-        avatarUrl:
-          "https://media.licdn.com/dms/image/D4D03AQFH9Z5rVSQqjw/profile-displayphoto-shrink_200_200/0/1664619626301?e=1698278400&v=beta&t=Man4wOyO50ols3UiTVp_ZR0BQD8QJPGbtmRbiAAdnKo",
-      },
-      {
-        name: "Nahil W",
-        description:
-          "Chairman and CEO at East - West Group of Companies, working of social projects and supporting social enterprises through my foundation.",
-        social: "",
-        linkedin: "https://www.linkedin.com/in/nahil-wijesuriya-a3876622/",
-        avatarUrl:
-          "https://media.licdn.com/dms/image/C4D03AQF0QfLR1OCOcg/profile-displayphoto-shrink_200_200/0/1516980937791?e=1698278400&v=beta&t=RLRq4TX-kbbvnCgpXlS_k4IY-BCQykoOIBmhCtoz8rQ",
-      },
-    ],
     founderData: [
       {
-        name: "Viji W",
-        description:
-          "I am coder and I am passionate about teaching tech and upskill people into a career in tech",
-        linkedin: "https://www.linkedin.com/in/vijiw/",
+        name: "your name",
+        description: "Talk about yourself and your experience ",
+        linkedin: "https://www.linkedin.com/",
         facebook: false,
         twitter: "",
         social: "",
-        avatarUrl:
-          "https://media.licdn.com/dms/image/C4D03AQGQgyGQIQW5Hw/profile-displayphoto-shrink_200_200/0/1663690442529?e=1698278400&v=beta&t=O4DvcduPgOYFL1D2GX97lPG3UmK9xtrsZ3F7ZiZxhws",
+        avatarUrl: "https://robohash.org/viji",
       },
       {
-        name: "Imran H",
-        description:
-          "Coder Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla facilisi. Suspendisse auctos ",
+        name: "CTO person",
+        description: "Talk about yourself and your experience ",
         social: "",
-        linkedin: "https://www.linkedin.com/in/imranhishaam/",
-        avatarUrl:
-          "https://media.licdn.com/dms/image/D5603AQHOaNnbredo7w/profile-displayphoto-shrink_200_200/0/1674912962387?e=1698278400&v=beta&t=vnC07emdnVBa9TuYbv5SqDByj0SGSdAnRTmaq6ndG8Q",
+        linkedin: "https://www.linkedin.com/",
+        avatarUrl: "https://robohash.org/imran",
+      },
+    ],
+    advisorData: [
+      {
+        name: "your advisor",
+        description: "Talk about advisors experience",
+        linkedin: "https://www.linkedin.com/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl: "https://robohash.org/chantal",
+      },
+      {
+        name: "your advisor",
+        description: "Talk about advisors experience",
+        linkedin: "https://www.linkedin.com/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl: "https://robohash.org/sirisena",
       },
     ],
 
@@ -569,7 +561,7 @@ export const companyPitchData = [
       companyName: "Your-Company-Name",
       discordWebhook:
         "https://discord.com/api/webhooks/1145414256167231629/RHTjlzabsk465D0gOk7PEbKy0c0DvCe9pPo-3fgrZ4KXIngREGIfcIWK34uwmi66Y703",
-      emailFounder: "hello@techforgood.lk",
+      emailFounder: "founder@yexample.com",
       backgroundColor: "#f2b823",
       companyLogo: "",
     },

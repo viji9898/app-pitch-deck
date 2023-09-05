@@ -359,12 +359,12 @@ export const companyPitchData = [
   },
   {
     pitchId: "123456",
-    pitchUrl: "shmay",
+    pitchUrl: "dev-shmay",
     metaTags: {
       ogTitle: "Shmay - Pitch Deck",
       lastModified: "2023-09-05 11:05:53 UTC",
       ogImage:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/og-image-template-pitch-deck.png",
+        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/og-imge-pitch-deck.png",
       ogUrl: "https://pitchdeck/in/shmay",
       ogDescription:
         "Template deck provides an outline of how to create your pitch deck. Follow the guidence and examples to get you started",

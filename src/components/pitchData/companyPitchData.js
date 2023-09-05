@@ -566,18 +566,26 @@ export const companyPitchData = [
       companyLogo: "",
     },
     investmentDetails: (
-      <Row gutter={[18, 18]}>
-        <Col xs={24} sm={24} md={12}>
-          <h3>Raising</h3>
-          <p style={{ fontSize: "40px" }}>Rs.5,000,000</p>
-        </Col>
-        <Col xs={24} sm={24} md={12}>
-          <h3>Scheme:</h3>
-          <p>{"SAFE Investment Scheme"}</p>
-          <h3>Target Close</h3>
-          <p>{"23 Sept 2023"}</p>
-        </Col>
-      </Row>
+      <Alert
+        message="Guidance:"
+        description={
+          <Row gutter={[18, 18]}>
+            <Col xs={24} sm={24} md={12}>
+              <h3>Raising</h3>
+              <p style={{ fontSize: "20px" }}>
+                Mention how much your trying to raise
+              </p>
+            </Col>
+            <Col xs={24} sm={24} md={12}>
+              <h3>Scheme:</h3>
+              <p>{"SAFE Investment Scheme"}</p>
+              <h3>Target Close</h3>
+              <p>{"You target date for closing the pitch"}</p>
+            </Col>
+          </Row>
+        }
+        type="warning"
+      />
     ),
   },
 ];

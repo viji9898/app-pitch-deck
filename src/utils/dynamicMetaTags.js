@@ -8,6 +8,7 @@ export const DynamicMetaTags = ({ metaTags }) => {
     <Helmet>
       <title>{ogTitle}</title>
       <meta name="title" content={ogTitle} />
+      <meta name="author" content="@viji.com"></meta>
       <meta name="description" content={ogDescription} />
       {/* Facebook & Linkedin Meta Tags */}
       <meta property="og:type" content="website" />

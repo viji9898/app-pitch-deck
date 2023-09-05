@@ -364,7 +364,8 @@ export const companyPitchData = [
       ogImage:
         "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/og-image-template-pitch-deck.png",
       ogUrl: "https://pd/in/template",
-      ogDescription: "Template deck showing the outline of a pitch deck",
+      ogDescription:
+        "Template deck provides an outline of how to create your pitch deck. Follow the guidence and examples to get you started",
     },
     paid: false,
     background:

@@ -602,7 +602,7 @@ export const companyPitchData = [
         "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/og-imge-pitch-deck.png",
       ogUrl: "https://pd/in/template",
       ogDescription:
-        "VStay: Your Passport to Exceptional Stays. Explore, Book, and Experience the Perfect Accommodations for Unforgettable Journeys.",
+        "Your Passport to Exceptional Stays. Explore, Book, and Experience the Perfect Accommodations for Unforgettable Journeys.",
     },
     paid: false,
     background:

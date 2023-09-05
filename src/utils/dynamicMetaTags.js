@@ -3,10 +3,12 @@ import Helmet from "react-helmet";
 export const DynamicMetaTags = ({ metaTags }) => {
   console.log(metaTags);
 
-  const { ogTitle, ogImage, ogUrl, ogDescription } = metaTags;
+  const { ogTitle, ogImage, ogUrl, ogDescription, lastModified } = metaTags;
+  console.log(lastModified);
   return (
     <Helmet>
       <title>{ogTitle}</title>
+      <meta name="lastmodified" content={lastModified} />
       <meta name="title" content={ogTitle} />
       <meta name="author" content="@viji.com"></meta>
       <meta name="description" content={ogDescription} />

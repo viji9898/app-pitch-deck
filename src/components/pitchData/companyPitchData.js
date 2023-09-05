@@ -360,9 +360,9 @@ export const companyPitchData = [
     pitchId: "123456",
     pitchUrl: "template",
     metaTags: {
-      ogTitle: "tempplate - Pitch Deck",
+      ogTitle: "template - Pitch Deck",
       ogImage:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/og-imge-pitch-deck.png",
+        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/og-image-template-pitch-deck.png",
       ogUrl: "https://pd/in/template",
       ogDescription: "Template deck showing the outline of a pitch deck",
     },
@@ -521,7 +521,7 @@ export const companyPitchData = [
     founderData: [
       {
         name: "your name",
-        description: "Talk about yourself and your experience ",
+        description: "Talk about yourself and your experience.",
         linkedin: "https://www.linkedin.com/",
         facebook: false,
         twitter: "",
@@ -530,7 +530,7 @@ export const companyPitchData = [
       },
       {
         name: "CTO person",
-        description: "Talk about yourself and your experience ",
+        description: "Talk about yourself and your experience.",
         social: "",
         linkedin: "https://www.linkedin.com/",
         avatarUrl: "https://robohash.org/imran",
@@ -539,7 +539,8 @@ export const companyPitchData = [
     advisorData: [
       {
         name: "your advisor",
-        description: "Talk about advisors experience",
+        description:
+          "Talk about your advisors experience, focus on how it may relate to your project.",
         linkedin: "https://www.linkedin.com/",
         facebook: false,
         twitter: "",
@@ -548,7 +549,7 @@ export const companyPitchData = [
       },
       {
         name: "your advisor",
-        description: "Talk about advisors experience",
+        description: "Talk about your advisors experience and success.",
         linkedin: "https://www.linkedin.com/",
         facebook: false,
         twitter: "",

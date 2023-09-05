@@ -170,9 +170,9 @@ export const companyPitchData = [
   },
   {
     pitchId: "123456",
-    pitchUrl: "viso",
+    pitchUrl: "viso-learn",
     metaTags: {
-      ogTitle: "Viso - Pitch Deck",
+      ogTitle: "Viso Learn - Pitch Deck",
       lastModified: "2023-09-05 11:05:53 UTC",
       ogImage:
         "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/og-imge-pitch-deck.png",
@@ -184,7 +184,7 @@ export const companyPitchData = [
     background:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/placeholder-image-1050-390.png",
     overview: {
-      companyName: "Viso",
+      companyName: "Viso Learn",
       description: (
         <Alert
           message="Guidance"

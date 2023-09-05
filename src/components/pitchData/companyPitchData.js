@@ -15,7 +15,7 @@ export const companyPitchData = [
       ogTitle: "Viso - Pitch Deck",
       ogImage:
         "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/og-imge-pitch-deck.png",
-      ogUrl: "https://pd/in/viso",
+      ogUrl: "https://pitchdeck.lk/in/viso",
       ogDescription:
         "Viso Eduhub, which provides comprehensive information on courses offered by both government and private institutes. Our platform make it easier for students to search and find the courses they need. Additionally, we are a Level 1 seller on the Fiverr platform. In addition to our website, we are currently developing a school database management system.",
     },

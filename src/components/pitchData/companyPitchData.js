@@ -608,14 +608,9 @@ export const companyPitchData = [
     background:
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/placeholder-image-1050-390.png",
     overview: {
-      companyName: "Your-Company-Name",
-      description: (
-        <Alert
-          message="Guidance:"
-          description="Begin with a brief introduction of your company and its background. Mention when and why the company was founded. Highlight any notable achievements or milestones."
-          type="info"
-        />
-      ),
+      companyName: "V Stay",
+      description:
+        "Your Passport to Exceptional Stays. Explore, Book, and Experience the Perfect Accommodations for Unforgettable Journeys.",
       socialLinks: [
         {
           type: "website",

@@ -12,12 +12,19 @@ import { Founder } from "../components/pitchDeck/founders";
 import { Advisors } from "../components/pitchDeck/advisors";
 import { NotFound } from "../utils/notFound";
 import { Interested } from "../components/pitchDeck/interested";
+import { DynamicMetaTags } from "../utils/dynamicMetaTags";
 
 export const DynamicPitch = () => {
   const { pitchUrl } = useParams();
   const [pitchData, setPitchData] = useState({
     pitchUrl: "",
     pitchMaterial: "",
+    metaTags: {
+      ogTitle: "",
+      ogImage: "",
+      ogUrl: "",
+      ogDescription: "",
+    },
     additionalInfo: "",
     advisorData: [],
     founderData: [],
@@ -59,6 +66,7 @@ export const DynamicPitch = () => {
             justifyContent: "center",
           }}
         >
+          <DynamicMetaTags metaTags={pitchData.metaTags} />
           <Background background={pitchData.background} />
           <Overview pitchData={pitchData} />
           <ThePitch pitchMaterial={pitchData.pitchMaterial} />

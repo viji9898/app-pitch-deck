@@ -7,10 +7,20 @@ import { SelectOutlined } from "@ant-design/icons";
 
 import { PitchExamples } from "../components/pitchDeck/pitchExamples";
 import { Footer } from "../components/navigation/footer";
+import { DynamicMetaTags } from "../utils/dynamicMetaTags";
 
 export const PitchDeck = () => {
+  const metaTags = {
+    ogTitle: "Create your perfect pitch",
+    ogImage:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/og-image-pitch-deck.png",
+    ogUrl: "https://pitchdeck.lk",
+    ogDescription:
+      "We help startups build their perfect pitch deck, Ideation. Seeding. Get Funded.",
+  };
   return (
     <div className="main" style={{ margin: "25px" }}>
+      <DynamicMetaTags metaTags={metaTags} />
       <Row
         gutter={[18, 18]}
         style={{

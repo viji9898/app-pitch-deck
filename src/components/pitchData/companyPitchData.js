@@ -824,6 +824,216 @@ export const companyPitchData = [
   },
   {
     pitchId: "123456",
+    pitchUrl: "dev-magic-bit",
+    metaTags: {
+      ogTitle: "Magic Bit- Pitch Deck",
+      lastModified: "2023-09-05 11:05:53 UTC",
+      ogImage:
+        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/og-imge-pitch-deck.png",
+      ogUrl: "https://pitchdeck/in/dev-magic-bit",
+      ogDescription:
+        "Magicbit provides STEM kits for kids to create 100+ innovative projects in coding, robotics, IoT & electronics with project based learning.",
+    },
+    paid: false,
+    background:
+      "https://scontent.fcmb2-2.fna.fbcdn.net/v/t39.30808-6/352542211_940072460603653_2988482790783993744_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=52f669&_nc_ohc=0JMmcruvn6cAX8sKYc9&_nc_ht=scontent.fcmb2-2.fna&oh=00_AfDFF8f1SCoQamhmx4Njj4lc5N4HNDd4RnxeRaoWDef-hg&oe=64FF4401",
+    overview: {
+      companyName: "Magic Bit",
+      description:
+        "Magicbit provides STEM kits for kids to create 100+ innovative projects in coding, robotics, IoT & electronics with project based learning.",
+      socialLinks: [
+        {
+          type: "website",
+          url: "https://magicbit.cc/",
+          icon: <HomeOutlined />,
+        },
+        {
+          type: "linkedin",
+          url: "https://www.linkedin.com/company/magicbit0/",
+          icon: <LinkedinOutlined />,
+        },
+        {
+          type: "instagram",
+          url: "https://www.instagram.com/magicbit0",
+          icon: <InstagramOutlined />,
+        },
+        {
+          type: "Facebook",
+          url: "https://www.facebook.com/magicbit0/",
+          icon: <FacebookOutlined />,
+        },
+      ],
+      companyAvatar:
+        "https://scontent.fcmb2-2.fna.fbcdn.net/v/t39.30808-6/302095643_494890229310314_2050112981453681854_n.png?_nc_cat=109&ccb=1-7&_nc_sid=a2f6c7&_nc_ohc=8QEOLJOgqRUAX8V9zxx&_nc_ht=scontent.fcmb2-2.fna&oh=00_AfC3ZPL4tWgGF3j9Kc6Ck-EEXXbCem99YEnZpGsH1aG82w&oe=64FDF2D9",
+      tags: [
+        {
+          color: "#f2b823",
+          title: "Traction",
+        },
+        {
+          color: "cyan",
+          title: "EdTech",
+        },
+        {
+          color: "salmon",
+          title: "Impact",
+        },
+      ],
+      investmentOverviewDescription: (
+        <div>
+          <p>
+            <strong>{"Tagert Close:"}</strong>
+            {"$500,000"}
+          </p>
+          <p>
+            <strong>{"Next Step: "}</strong>
+            {"Raising Funds to expand our global footprint."}
+          </p>
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="https://en.wikipedia.org/wiki/Simple_agreement_for_future_equity"
+          >
+            {"SAFE Investment Scheme"}
+          </a>
+        </div>
+      ),
+    },
+    pitchMaterial: {
+      mission: `"Let's Make IoT with Magic Bit"`,
+      pitchVideoDesktop:
+        "https://player.vimeo.com/video/861899903?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      pitchVideoMobie:
+        "https://player.vimeo.com/video/861899903?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      pitchSlidesDesktop:
+        "https://docs.google.com/presentation/d/e/2PACX-1vQNkWCo1BjxaoQLUcuQhhiMr-JCBwFO9hnRGykp5DQwZ8siZLAnh2X5LcIGF-Szre8wP-7t8M1OXvdx/embed?start=false&loop=false&delayms=3000",
+      pitchSlidesMobile:
+        "https://docs.google.com/presentation/d/e/2PACX-1vRceHDqIpMrbUT7ExtnH6asjLnqnBx4MPHMnw1v37BYU6m44lFcBDg6ofkEQ8aAs433N6-jDnB5SK45/embed?start=false&loop=false&delayms=3000",
+    },
+    additionalInfo: {
+      vision: (
+        <Alert
+          message="Guidance:"
+          description={
+            <div>
+              <p>
+                {
+                  "Here are a few examples of well-known company vision statements:"
+                }
+              </p>
+              <ul>
+                <li>
+                  <b>{"Google: "}</b>
+                  {"To provide access to the world's information in one click."}
+                </li>
+                <li>
+                  <b>{"Tesla: "}</b>
+                  {
+                    "To create the most compelling car company of the 21st century by driving the world's transition to electric vehicles."
+                  }
+                </li>
+                <li>
+                  <b>{"Microsoft: "}</b>
+                  {
+                    "Empower every person and every organization on the planet to achieve more."
+                  }
+                </li>
+                <li>
+                  <b>{"techForGood: "}</b>
+                  {"UpSkill a Nation"}
+                </li>
+              </ul>
+            </div>
+          }
+          type="info"
+        />
+      ),
+
+      problem: (
+        <Alert
+          message="Guidance:"
+          description={`A problem statement is a concise description of an issue, challenge, or obstacle that needs to be addressed or solved. It serves as a clear and specific articulation of the problem at hand, making it easier for individuals or organizations to understand, analyze, and ultimately work toward finding a solution.`}
+          type="info"
+        />
+      ),
+
+      solution: (
+        <Alert
+          message="Guidance:"
+          description={
+            "A solution statement is a concise and clear description of the proposed solution to a problem or challenge that has been previously identified through a problem statement. It outlines the actions, strategies, or methods that will be implemented to address and resolve the problem effectively."
+          }
+          type="info"
+        />
+      ),
+    },
+    founderData: [
+      {
+        name: "Migara A",
+        description:
+          "Co-Founder/CEO MAGICBIT | IoT | Innovation | STEM Education",
+        linkedin: "https://www.linkedin.com/in/amithodhana/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl:
+          "https://media.licdn.com/dms/image/C5603AQE-4YeUdfKoaw/profile-displayphoto-shrink_200_200/0/1635139884336?e=1699488000&v=beta&t=QS8X3Jn_8X2s_ANZvkKRXdZ4tbc0XNFSbbqDMFwhlOg",
+      },
+      {
+        name: "CTO person",
+        description: "Talk about yourself and your experience.",
+        social: "",
+        linkedin: "https://www.linkedin.com/",
+        avatarUrl: "https://robohash.org/imran",
+      },
+    ],
+    advisorData: [
+      {
+        name: "your advisor",
+        description:
+          "Talk about your advisors experience, focus on how it may relate to your project.",
+        linkedin: "https://www.linkedin.com/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl: "https://robohash.org/chantal",
+      },
+      {
+        name: "your advisor",
+        description: "Talk about your advisors experience and success.",
+        linkedin: "https://www.linkedin.com/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl: "https://robohash.org/sirisena",
+      },
+    ],
+
+    interested: {
+      companyName: "Magic Bit",
+      discordWebhook:
+        "https://discord.com/api/webhooks/1145414256167231629/RHTjlzabsk465D0gOk7PEbKy0c0DvCe9pPo-3fgrZ4KXIngREGIfcIWK34uwmi66Y703",
+      emailFounder: "info@magicbit.cc",
+      backgroundColor: "#f2b823",
+      companyLogo: "",
+    },
+    investmentDetails: (
+      <Row gutter={[18, 18]}>
+        <Col xs={24} sm={24} md={12}>
+          <h3>Raising</h3>
+          <p style={{ fontSize: "40px" }}>{"$500,000/-"}</p>
+        </Col>
+        <Col xs={24} sm={24} md={12}>
+          <h3>Scheme:</h3>
+          <p>{"SAFE Investment Scheme"}</p>
+          <h3>Target Close</h3>
+          <p>{"1st December 2023"}</p>
+        </Col>
+      </Row>
+    ),
+  },
+  {
+    pitchId: "123456",
     pitchUrl: "template",
     metaTags: {
       ogTitle: "template - Pitch Deck",

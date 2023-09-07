@@ -904,9 +904,9 @@ export const companyPitchData = [
     pitchMaterial: {
       mission: `"Let's Make IoT with Magic Bit"`,
       pitchVideoDesktop:
-        "https://player.vimeo.com/video/861899903?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        "https://player.vimeo.com/video/861899903?h=7d2cbbdf68&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       pitchVideoMobie:
-        "https://player.vimeo.com/video/861899903?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        "https://player.vimeo.com/video/861899903?h=7d2cbbdf68&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
       pitchSlidesDesktop:
         "https://docs.google.com/presentation/d/e/2PACX-1vQNkWCo1BjxaoQLUcuQhhiMr-JCBwFO9hnRGykp5DQwZ8siZLAnh2X5LcIGF-Szre8wP-7t8M1OXvdx/embed?start=false&loop=false&delayms=3000",
       pitchSlidesMobile:

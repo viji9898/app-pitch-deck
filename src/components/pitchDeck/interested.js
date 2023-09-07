@@ -63,7 +63,7 @@ export const Interested = ({ interested, paid }) => {
                 style={{
                   color: backgroundColor,
                   fontSize: "16px",
-                  width: "50%",
+                  width: "75%",
                 }}
                 size="large"
                 shape="round"

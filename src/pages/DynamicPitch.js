@@ -70,7 +70,10 @@ export const DynamicPitch = () => {
           <DynamicMetaTags metaTags={pitchData.metaTags} />
           {pitchUrl === "template" && <Resources />}
           <Card>
-            <Background background={pitchData.background} />
+            <Background
+              background={pitchData.background}
+              backgroundMobile={pitchData.backgroundMobile}
+            />
             <Overview pitchData={pitchData} />
             <ThePitch pitchMaterial={pitchData.pitchMaterial} />
             <AdditionalInfo additionalInfo={pitchData.additionalInfo} />

@@ -837,6 +837,8 @@ export const companyPitchData = [
     paid: false,
     background:
       "https://scontent.fcmb2-2.fna.fbcdn.net/v/t39.30808-6/352542211_940072460603653_2988482790783993744_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=52f669&_nc_ohc=0JMmcruvn6cAX8sKYc9&_nc_ht=scontent.fcmb2-2.fna&oh=00_AfDFF8f1SCoQamhmx4Njj4lc5N4HNDd4RnxeRaoWDef-hg&oe=64FF4401",
+    backgroundMobile:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/magic-bit/magic-bit-backgroundMobile-01.png",
     overview: {
       companyName: "Magic Bit",
       description:

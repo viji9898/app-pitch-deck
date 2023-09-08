@@ -1036,6 +1036,252 @@ export const companyPitchData = [
   },
   {
     pitchId: "123456",
+    pitchUrl: "dev-immersive-smile",
+    metaTags: {
+      ogTitle: "Immersive Smile - Pitch Deck",
+      lastModified: "2023-09-05 11:05:53 UTC",
+      ogImage:
+        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/og-imge-pitch-deck.png",
+      ogUrl: "https://pd/in/template",
+      ogDescription:
+        "Discover how Immersive Smile Plus uses virtual reality, haptic feedback, and biofeedback technology to alleviate pain and anxiety during medical procedures, revolutionizing the patient experience and setting new standards in healthcare.",
+    },
+    paid: false,
+    background:
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/placeholder-image-1050-390.png",
+    overview: {
+      companyName: "Immersive Smile",
+      description:
+        "In order to help people who are experiencing psychological pain and physical pain, we have developed an idea in VR Cyber psychological Therapy by the name “Immersive Smile Plus”. Immersive Smile Plus is an attempt to relieve the pain that people go through at a much much more convenient way. Immersive Smile plus is VR technology-based solution.",
+      socialLinks: [
+        {
+          type: "website",
+          url: "https://immersivesmile.com/",
+          icon: <HomeOutlined />,
+        },
+        {
+          type: "linkedin",
+          url: "https://www.linkedin.com/company/immersivesmile/",
+          icon: <LinkedinOutlined />,
+        },
+        // {
+        //   type: "instagram",
+        //   url: "https://www.instagram.com/techforgood_lk/",
+        //   icon: <InstagramOutlined />,
+        // },
+        // {
+        //   type: "Facebook",
+        //   url: "https://www.facebook.com/profile.php?id=100094714128169",
+        //   icon: <FacebookOutlined />,
+        // },
+      ],
+      companyAvatar:
+        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/templete-logo.png",
+      tags: [
+        {
+          color: "#f2b823",
+          title: "Pre-Seed",
+        },
+        {
+          color: "cyan",
+          title: "MedTech",
+        },
+        {
+          color: "salmon",
+          title: "Impact",
+        },
+      ],
+      investmentOverviewDescription: (
+        <Alert
+          message="Guidance:"
+          description={
+            <div>
+              <p>
+                <strong>{"Tagert Close:"}</strong>
+                {
+                  "Mention how much your trying to raise, remember your investor will want a breakdown of your expenditure"
+                }
+              </p>
+              <p>
+                <strong>{"Next Step: "}</strong>
+                {
+                  "You can give an overview of how you plan to utilise the funds"
+                }
+              </p>
+              <a
+                target="_blank"
+                rel="noreferrer"
+                href="https://en.wikipedia.org/wiki/Simple_agreement_for_future_equity"
+              >
+                {"SAFE Investment Scheme"}
+              </a>
+            </div>
+          }
+          type="warning"
+        />
+      ),
+    },
+    pitchMaterial: {
+      mission: (
+        <Alert
+          message="Guidance:"
+          description={`"You Company Tagline Here", keep it concise and description`}
+          type="info"
+        />
+      ),
+      pitchVideoDesktop:
+        "https://player.vimeo.com/video/862282362?h=20a860e8d3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      pitchVideoMobie:
+        "https://player.vimeo.com/video/862282362?h=20a860e8d3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+      pitchSlidesDesktop:
+        "https://docs.google.com/presentation/d/e/2PACX-1vQLgA6nJ8y_0DgjYcFrI72uYHcGogVaBw4YS6UdFsoJv33Rb1KG16QnJ2q_HPZPEg/embed?start=false&loop=false&delayms=3000",
+      pitchSlidesMobile:
+        "https://docs.google.com/presentation/d/e/2PACX-1vQLgA6nJ8y_0DgjYcFrI72uYHcGogVaBw4YS6UdFsoJv33Rb1KG16QnJ2q_HPZPEg/embed?start=false&loop=false&delayms=3000",
+    },
+    additionalInfo: {
+      vision: (
+        <Alert
+          message="Guidance:"
+          description={
+            <div>
+              <p>
+                {
+                  "Here are a few examples of well-known company vision statements:"
+                }
+              </p>
+              <ul>
+                <li>
+                  <b>{"Google: "}</b>
+                  {"To provide access to the world's information in one click."}
+                </li>
+                <li>
+                  <b>{"Tesla: "}</b>
+                  {
+                    "To create the most compelling car company of the 21st century by driving the world's transition to electric vehicles."
+                  }
+                </li>
+                <li>
+                  <b>{"Microsoft: "}</b>
+                  {
+                    "Empower every person and every organization on the planet to achieve more."
+                  }
+                </li>
+                <li>
+                  <b>{"techForGood: "}</b>
+                  {"UpSkill a Nation"}
+                </li>
+              </ul>
+            </div>
+          }
+          type="info"
+        />
+      ),
+
+      problem: (
+        <Alert
+          message="Guidance:"
+          description={`A problem statement is a concise description of an issue, challenge, or obstacle that needs to be addressed or solved. It serves as a clear and specific articulation of the problem at hand, making it easier for individuals or organizations to understand, analyze, and ultimately work toward finding a solution.`}
+          type="info"
+        />
+      ),
+
+      solution: (
+        <Alert
+          message="Guidance:"
+          description={
+            "A solution statement is a concise and clear description of the proposed solution to a problem or challenge that has been previously identified through a problem statement. It outlines the actions, strategies, or methods that will be implemented to address and resolve the problem effectively."
+          }
+          type="info"
+        />
+      ),
+    },
+    founderData: [
+      {
+        name: "Jaiyramanan V",
+        description:
+          "Passionate about VR technology-based solutions and it relates to health care",
+        linkedin:
+          "https://www.linkedin.com/in/jaiyramanan-vijayaalayan-798412118/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl:
+          "https://media.licdn.com/dms/image/D5603AQEHOjyk7jjOxw/profile-displayphoto-shrink_200_200/0/1684827565063?e=1699488000&v=beta&t=nIqqP50Sdt0_Xu-PV4qv5uv5a-GZlohaOXgHKxPCUQQ",
+      },
+      // {
+      //   name: "CTO person",
+      //   description: "Talk about yourself and your experience.",
+      //   social: "",
+      //   linkedin: "https://www.linkedin.com/",
+      //   avatarUrl: "https://robohash.org/imran",
+      // },
+    ],
+    advisorData: [
+      {
+        name: "Professor Prasad Wimalaratne",
+        description:
+          "Specialized in XR and 3D Mathematics @ University Colombo ",
+        linkedin: "https://www.linkedin.com/in/prasad-wimalaratne-8a46b1230/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl:
+          "https://media.licdn.com/dms/image/D5603AQEaIsNE0UmCGg/profile-displayphoto-shrink_200_200/0/1665966879655?e=1699488000&v=beta&t=5Bd4P8bPWLjwxDM2t2P1bCJw6cSMIEJxyuHJ3f1b1xA",
+      },
+      {
+        name: "Dr. Kumaradasan Umashankar",
+        description: "Urologist,Transplant Surgeon",
+        linkedin: "https://www.linkedin.com/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl: "https://robohash.org/sirisena",
+      },
+      {
+        name: "Achala Weerasooriya",
+        description:
+          "Building and Leading High-Performance Software Engineering Teams",
+        linkedin: "https://www.linkedin.com/in/achalaweerasooriya/",
+        facebook: false,
+        twitter: "",
+        social: "",
+        avatarUrl: "https://robohash.org/sirisena",
+      },
+    ],
+
+    interested: {
+      companyName: "Your-Company-Name",
+      discordWebhook:
+        "https://discord.com/api/webhooks/1145414256167231629/RHTjlzabsk465D0gOk7PEbKy0c0DvCe9pPo-3fgrZ4KXIngREGIfcIWK34uwmi66Y703",
+      emailFounder: "support@immersivesmile.com",
+      backgroundColor: "#f2b823",
+      companyLogo: "",
+    },
+    investmentDetails: (
+      <Alert
+        message="Guidance:"
+        description={
+          <Row gutter={[18, 18]}>
+            <Col xs={24} sm={24} md={12}>
+              <h3>Raising</h3>
+              <p style={{ fontSize: "20px" }}>
+                Mention how much your trying to raise
+              </p>
+            </Col>
+            <Col xs={24} sm={24} md={12}>
+              <h3>Scheme:</h3>
+              <p>{"SAFE Investment Scheme"}</p>
+              <h3>Target Close</h3>
+              <p>{"You target date for closing the pitch"}</p>
+            </Col>
+          </Row>
+        }
+        type="warning"
+      />
+    ),
+  },
+  {
+    pitchId: "123456",
     pitchUrl: "template",
     metaTags: {
       ogTitle: "template - Pitch Deck",

@@ -185,13 +185,8 @@ export const companyPitchData = [
       "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/placeholder-image-1050-390.png",
     overview: {
       companyName: "Viso Learn",
-      description: (
-        <Alert
-          message="Guidance"
-          description="Begin with a brief introduction of your company and its background. Mention when and why the company was founded. Highlight any notable achievements or milestones."
-          type="info"
-        />
-      ),
+      description:
+        "Viso Learn is dedicated to simplifying and streamlining student education. To achieve this, we offer a range of software applications, including a school database management system aimed at easing administrative tasks, thus saving valuable time for teachers and staff. Additionally, we are developing a peer-to-peer learning platform to foster collaborative learning. Our Eduhub, which showcases courses offered by various universities, was successfully launched in July 2023.",
       socialLinks: [
         {
           type: "website",
@@ -233,14 +228,16 @@ export const companyPitchData = [
       investmentOverviewDescription: (
         <div>
           <p>
-            <strong>{"Tagert Close:"}</strong>
+            <strong>{"Tagert Close:USD13,000"}</strong>
             {
-              "Mention how much your trying to raise, remember your investor will want a breakdown of your expenditure"
+              "Our initial goal is to captivate the school management database around Sri Lankan schools."
             }
           </p>
           <p>
             <strong>{"Next Step: "}</strong>
-            {"You can give an overview of how you plan to utilise the funds"}
+            {
+              "Software Development Cost: $10000, Marketing Cost: $1000, Annual Hosting & Maintenance Cost: $250, Annual Salary for Data entry person: $1200"
+            }
           </p>
           <a
             target="_blank"
@@ -256,35 +253,15 @@ export const companyPitchData = [
       vision: (
         <div>
           <p>
-            {"Here are a few examples of well-known company vision statements:"}
+            {
+              "Connect students worldwide, creating opportunities for collaborative learning."
+            }
           </p>
-          <ul>
-            <li>
-              <b>{"Google: "}</b>
-              {"To provide access to the world's information in one click."}
-            </li>
-            <li>
-              <b>{"Tesla: "}</b>
-              {
-                "To create the most compelling car company of the 21st century by driving the world's transition to electric vehicles."
-              }
-            </li>
-            <li>
-              <b>{"Microsoft: "}</b>
-              {
-                "Empower every person and every organization on the planet to achieve more."
-              }
-            </li>
-            <li>
-              <b>{"techForGood: "}</b>
-              {"UpSkill a Nation"}
-            </li>
-          </ul>
         </div>
       ),
-      problem: `A problem statement is a concise description of an issue, challenge, or obstacle that needs to be addressed or solved. It serves as a clear and specific articulation of the problem at hand, making it easier for individuals or organizations to understand, analyze, and ultimately work toward finding a solution.`,
+      problem: `While numerous technologies revolutionize various sectors, certain countries lag in adopting modern methods to manage education. This makes it hard for students to get learning materials, opportunities for higher education, and study together with peers.`,
       solution:
-        "A solution statement is a concise and clear description of the proposed solution to a problem or challenge that has been previously identified through a problem statement. It outlines the actions, strategies, or methods that will be implemented to address and resolve the problem effectively.",
+        "To address these challenges and simplify the student experience, we're creating a suite of software applications. This includes a school database management system to streamline administrative tasks, freeing up time for teachers and staff. Additionally, we're designing a peer-to-peer learning platform to encourage collaborative learning. Our Eduhub also features courses from diverse universities.",
     },
     founderData: [
       {
@@ -326,7 +303,7 @@ export const companyPitchData = [
     ],
 
     pitchMaterial: {
-      mission: `"You Company Tagline Here"`,
+      mission: `"Revolutionize education!"`,
       pitchVideoDesktop: "https://player.vimeo.com/video/87110435?h=f253e737bd",
       pitchVideoMobie: "https://player.vimeo.com/video/829691380?h=fc6c6c52d9",
       pitchSlidesDesktop:
@@ -346,13 +323,13 @@ export const companyPitchData = [
       <Row gutter={[18, 18]}>
         <Col xs={24} sm={24} md={12}>
           <h3>Raising</h3>
-          <p style={{ fontSize: "40px" }}>Rs.5,000,000</p>
+          <p style={{ fontSize: "40px" }}>USD13,000</p>
         </Col>
         <Col xs={24} sm={24} md={12}>
           <h3>Scheme:</h3>
           <p>{"SAFE Investment Scheme"}</p>
           <h3>Target Close</h3>
-          <p>{"23 Sept 2023"}</p>
+          <p>{"01 Dec 2023"}</p>
         </Col>
       </Row>
     ),

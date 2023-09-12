@@ -667,48 +667,12 @@ export const companyPitchData = [
       pitchVideoDesktop: "https://player.vimeo.com/video/87110435?h=f253e737bd",
       pitchVideoMobie: "https://player.vimeo.com/video/829691380?h=fc6c6c52d9",
       pitchSlidesDesktop:
-        "https://docs.google.com/presentation/d/e/2PACX-1vQYZrL8VPm-J9I2Naru4_vm1uLc_TfV2-F1SLVQjoR1AuHnFHgo-V71aGymH4P4l7eL_b4eqdlIzTMb/embed?start=false&loop=false&delayms=3000",
+        "https://docs.google.com/presentation/d/e/2PACX-1vR79cG4PEiQoPz__-B-VKEysmeph8G0OhuhPqOdWsb0gkrv5kzBOzQz65nvvmisBjeBOdEIUW8eqZG-/embed?start=false&loop=false&delayms=3000",
       pitchSlidesMobile:
-        "https://docs.google.com/presentation/d/e/2PACX-1vQczXbfp6UXW7WJo5m20PvlyWaUwrzivV92HIASDp58nilmL4c7_7AzRgrcTc-P533WRlTEyHfS3wen/embed?start=false&loop=false&delayms=3000",
+        "https://docs.google.com/presentation/d/e/2PACX-1vR79cG4PEiQoPz__-B-VKEysmeph8G0OhuhPqOdWsb0gkrv5kzBOzQz65nvvmisBjeBOdEIUW8eqZG-/embed?start=false&loop=false&delayms=3000",
     },
     additionalInfo: {
-      vision: (
-        <Alert
-          message="Guidance:"
-          description={
-            <div>
-              <p>
-                {
-                  "Here are a few examples of well-known company vision statements:"
-                }
-              </p>
-              <ul>
-                <li>
-                  <b>{"Google: "}</b>
-                  {"To provide access to the world's information in one click."}
-                </li>
-                <li>
-                  <b>{"Tesla: "}</b>
-                  {
-                    "To create the most compelling car company of the 21st century by driving the world's transition to electric vehicles."
-                  }
-                </li>
-                <li>
-                  <b>{"Microsoft: "}</b>
-                  {
-                    "Empower every person and every organization on the planet to achieve more."
-                  }
-                </li>
-                <li>
-                  <b>{"techForGood: "}</b>
-                  {"UpSkill a Nation"}
-                </li>
-              </ul>
-            </div>
-          }
-          type="info"
-        />
-      ),
+      vision: `"Our vision at V Stay is to become the foremost global platform for travelers, where each individual is not just a guest, but a beloved member of our extended family. We aspire to continually innovate, offering a diverse array of accommodations, from cozy apartments to luxurious villas, ensuring that every traveler finds their perfect 'home away from home.' With our tagline, 'Discover your home away from home with V Stay,' we envision a world where travel is about forming meaningful connections and experiences with our ever-growing family of travelers."`,
 
       problem: (
         <Alert

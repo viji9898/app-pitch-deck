@@ -777,9 +777,9 @@ export const companyPitchData = [
     },
     paid: false,
     background:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/placeholder-image-1050-390.png",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/pitch-deck/magic-bit/backbround-magic-bit-pitch-01.png",
     backgroundMobile:
-      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/magic-bit/magic-bit-backgroundMobile-01.png",
+      "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/pitch-deck/magic-bit/backbround-magic-bit-pitch-01.png",
     overview: {
       companyName: "Magic Bit",
       description:

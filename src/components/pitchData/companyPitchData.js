@@ -46,7 +46,7 @@ export const companyPitchData = [
         },
       ],
       companyAvatar:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-tech-for-good/Learn/gmail-profile-pic-500px.png",
+        "https://media.discordapp.net/attachments/1148512176164831272/1151372390379561030/logo7_1.png?width=841&height=920",
       tags: [
         {
           color: "#f2b823",
@@ -210,7 +210,7 @@ export const companyPitchData = [
         },
       ],
       companyAvatar:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/templete-logo.png",
+        "https://media.discordapp.net/attachments/1148512176164831272/1151372390379561030/logo7_1.png?width=841&height=920",
       tags: [
         {
           color: "#f2b823",

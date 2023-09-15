@@ -674,13 +674,8 @@ export const companyPitchData = [
     additionalInfo: {
       vision: `"Our vision at V Stay is to become the foremost global platform for travelers, where each individual is not just a guest, but a beloved member of our extended family. We aspire to continually innovate, offering a diverse array of accommodations, from cozy apartments to luxurious villas, ensuring that every traveler finds their perfect 'home away from home.' With our tagline, 'Discover your home away from home with V Stay,' we envision a world where travel is about forming meaningful connections and experiences with our ever-growing family of travelers."`,
 
-      problem: (
-        <Alert
-          message="Guidance:"
-          description={`A problem statement is a concise description of an issue, challenge, or obstacle that needs to be addressed or solved. It serves as a clear and specific articulation of the problem at hand, making it easier for individuals or organizations to understand, analyze, and ultimately work toward finding a solution.`}
-          type="info"
-        />
-      ),
+      problem:
+        "While existing platforms like Airbnb and others primarily serve as accommodation booking platforms, they often lack the ability to foster travel communities and connections among users. This limitation becomes even more pronounced in light of recent geopolitical tensions that have led to restrictions on Russian travelers’ access to international platforms. ‘V Stay’ recognizes the need for a platform that goes beyond mere bookings, providing a space where travelers can connect, chat, and share their travel experiences. By prioritizing the creation of a vibrant travel community, ‘V Stay’ aims to offer Russian travelers an inclusive and engaging platform for not only finding accommodations but also building meaningful connections and sharing travel stories. The challenge is to develop a user-centric platform that encourages interaction, cultural exchange, and a sense of belonging among Russian travelers while complying with current international restrictions.",
 
       solution: (
         <Alert
@@ -694,9 +689,9 @@ export const companyPitchData = [
     },
     founderData: [
       {
-        name: "your name",
+        name: "Vidusha Lakshan",
         description: "Talk about yourself and your experience.",
-        linkedin: "https://www.linkedin.com/",
+        linkedin: "https://www.linkedin.com/in/vidusha-lakshan-600574252/",
         facebook: false,
         twitter: "",
         social: "",

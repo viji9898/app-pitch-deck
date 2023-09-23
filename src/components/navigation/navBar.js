@@ -1,10 +1,10 @@
 import Container from "react-bootstrap/Container";
 import Navbar from "react-bootstrap/Navbar";
-// import Nav from "react-bootstrap/Nav";
+import Nav from "react-bootstrap/Nav";
 // import logo from "../../images/logo.svg";
 
 import { Link } from "react-router-dom";
-// import { MainMenu } from "./mainMenu";
+import { MainMenu } from "./mainMenu";
 
 export const NavBar = () => {
   return (
@@ -23,9 +23,9 @@ export const NavBar = () => {
             />
           </Navbar.Brand>
         </Link>
-        {/* <Nav className="justify-content-end">
+        <Nav className="justify-content-end">
           <MainMenu />
-        </Nav> */}
+        </Nav>
       </Container>
     </Navbar>
   );

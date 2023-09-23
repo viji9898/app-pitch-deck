@@ -19,19 +19,15 @@ export const MainMenu = () => {
   const items = [
     {
       label: (
-        <Link to="/" style={{ textDecoration: "none" }} onClick={onClose}>
-          {"home"}
+        <Link
+          to="/discover"
+          style={{ textDecoration: "none" }}
+          onClick={onClose}
+        >
+          <Button shape="round">{"Discover"}</Button>
         </Link>
       ),
       key: "link1",
-    },
-    {
-      label: (
-        <Link to="/hello" style={{ textDecoration: "none" }} onClick={onClose}>
-          {"Ooops"}
-        </Link>
-      ),
-      key: "link2",
     },
   ];
 

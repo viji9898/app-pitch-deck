@@ -100,7 +100,7 @@ export const CompanyIdeation = () => {
   );
 
   return (
-    <Col span={12}>
+    <Col xs={24} sm={24} md={14}>
       <List
         itemLayout="horizontal"
         style={{ overflow: "scroll", maxHeight: "500px" }}

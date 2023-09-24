@@ -125,10 +125,12 @@ export const Discover = () => {
   return (
     <div className="main" style={{ margin: "10px" }}>
       <Row gutter={[18, 18]} style={{ maxWidth: "1200px" }}>
-        {/* <Col>
-          <h2>Partners</h2>
-          {"Acquity, Hatch, SLASSCOM, ICTA, LANKA ANGEL NETWORK, "}
-        </Col> */}
+        <Col>
+          <h2>Note:</h2>
+          {
+            "List startups that have participated in accelerators and incudators"
+          }
+        </Col>
         <Col span={24} style={{ textAlign: "left" }}>
           <h1>Ready to Seed!</h1>
           <p>
@@ -149,7 +151,7 @@ export const Discover = () => {
           <h2> Ideation</h2>
           <p>
             {
-              "Checkout the companies below that are ready to seed, they have fine tuned there ideas, understood the problem they are working on and have come up with their solution, checkout their MVP (minimal viable product) ready"
+              "Checkout the companies below that are in their ideation, they are building our MVP, getting a better understand of their problem statement and fine tuning their value proposition and coming up with their solution."
             }
           </p>
         </Col>

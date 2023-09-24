@@ -1,5 +1,5 @@
 import React from "react";
-import { Avatar, Col, List, Row, Space } from "antd";
+import { Col, List, Row, Space } from "antd";
 import {
   HomeOutlined,
   LinkedinOutlined,
@@ -10,84 +10,85 @@ import {
 export const CompanyIdeation = () => {
   const exampleData = [
     {
-      alt: "gif of doll house showing a property in 3d",
-      src: "https://images.squarespace-cdn.com/content/v1/5e85105860e4d00e03535059/1595262192709-DNMDJRFYXEKFCQGC68M5/Matterport+Dollhouse.gif",
-      avatar: "https://img.icons8.com/?size=512&id=BEa3DoPM5tos&format=png",
-      title: "3d.lk",
-      description: "Aiming to recreate Sri Lanka's Properties in 3-Dimensions",
-      sector: "Property Tech",
-      stage: "Seed",
-    },
-    {
-      alt: "gif of a API Service",
-      src: "https://i.pinimg.com/originals/bd/e9/79/bde979712f831c4827742c68fa9e87c2.gif",
-      avatar: "https://img.icons8.com/?size=512&id=cTDO21IUfZIy&format=png",
-      title: "DaaS",
-      description: "Providing API's for all kinds of Sri Lankan Data ",
-      sector: "Data Service",
-      stage: "Pre-Seed",
-    },
-    {
-      alt: "gif of doll house showing a property in 3d",
-      src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/pitch-deck/marriottWeligamaTitle.gif",
-      avatar:
-        "https://i.pinimg.com/originals/e1/78/6e/e1786e79b5287e0d6bca2104a8540e5a.png",
-      title: "Weligama Bay Marriott",
+      title: "Karadana Traders",
+      url: "https://karadanatraders.com/",
       description:
-        "Case Study on the Buidling of a 198 Key Marriott Resort & Spa",
-      sector: "Property Tech",
-      openSource: true,
+        "Supply high-quality vegetables to buyers with minimum wastage, improve the understanding of customers about vegetable varieties and how to select quality vegetables from different areas of the country. Reach export market and obtain a considerable share of the global market.",
+      founderName: "Kasan Prabath",
+      email: "kasunprabathdkp@gmail.com",
+      contactNumber: "0779491930",
     },
     {
-      alt: "gif of doll house showing a property in 3d",
-      src: "https://media2.giphy.com/media/QVUL20w0FwLKnQuX4D/giphy.gif?cid=ecf05e47l7j0xr19h3ekpz3iun0r5bvedfoje22ebaajvrjd&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-      avatar:
-        "https://mo.lk/static/media/hero-mo-caption.b94eba5860de9e5137b36657e7198a9a.svg",
-      title: "MO.LK",
-      description: "Platform for pre-loved goods",
-      sector: "E-commence",
-      openSource: false,
-      stage: "Pre-Seed",
-    },
-    {
-      alt: "gif of doll house showing a property in 3d",
-      src: "https://images.squarespace-cdn.com/content/v1/5e85105860e4d00e03535059/1595262192709-DNMDJRFYXEKFCQGC68M5/Matterport+Dollhouse.gif",
-      avatar: "https://img.icons8.com/?size=512&id=BEa3DoPM5tos&format=png",
-      title: "3d.lk",
-      description: "Aiming to recreate Sri Lanka's Properties in 3-Dimensions",
-      sector: "Property Tech",
-      stage: "Seed",
-    },
-    {
-      alt: "gif of a API Service",
-      src: "https://i.pinimg.com/originals/bd/e9/79/bde979712f831c4827742c68fa9e87c2.gif",
-      avatar: "https://img.icons8.com/?size=512&id=cTDO21IUfZIy&format=png",
-      title: "DaaS",
-      description: "Providing API's for all kinds of Sri Lankan Data ",
-      sector: "Data Service",
-      stage: "Pre-Seed",
-    },
-    {
-      alt: "gif of doll house showing a property in 3d",
-      src: "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/pitch-deck/marriottWeligamaTitle.gif",
-      avatar:
-        "https://i.pinimg.com/originals/e1/78/6e/e1786e79b5287e0d6bca2104a8540e5a.png",
-      title: "Weligama Bay Marriott",
+      title: "ImmersiveSmiles",
+      url: "https://immersivesmile.com",
       description:
-        "Case Study on the Buidling of a 198 Key Marriott Resort & Spa",
-      sector: "Property Tech",
-      openSource: true,
+        "Immersive Smile Plus is a pioneering healthcare technology company that focuses on utilizing virtual reality (VR) solutions to alleviate pain and anxiety in patients during medical procedures. Our innovative flagship product, the Immersive Smile Plus",
+      founderName: "Jaiyramanan Vijayaalayan",
+      email: "jaiyramanan@gmail.com",
+      contactNumber: "0761751237",
     },
     {
-      alt: "gif of doll house showing a property in 3d",
-      src: "https://media2.giphy.com/media/QVUL20w0FwLKnQuX4D/giphy.gif?cid=ecf05e47l7j0xr19h3ekpz3iun0r5bvedfoje22ebaajvrjd&ep=v1_gifs_search&rid=giphy.gif&ct=g",
-      avatar:
-        "https://mo.lk/static/media/hero-mo-caption.b94eba5860de9e5137b36657e7198a9a.svg",
-      title: "MO.LK",
-      description: "Platform for pre-loved goods",
-      sector: "E-commence",
-      openSource: false,
-      stage: "Pre-Seed",
+      title: "Lion: Bit",
+      url: "https://www.lionbit.lk/",
+      description:
+        "Lion:Bit is a pocket-sized computer that introduces you to how software and hardware work together. It has an LCD display, buttons, sensors and many input/output features. when programmed, let it interact with you and your world. You can code, customize. The high-performance capabilities of the Lion Bit make it suitable for robotics projects.",
+      founderName: "P. Kavinda Kotuwegedara",
+      email: "kotuwegedara@gmail.com",
+      contactNumber: "0772348985",
+    },
+    {
+      title: "V-Stay",
+      url: "https://vstay.great-site.net/",
+      description:
+        "VStay: Your Passport to Exceptional Stays. Explore, Book, and Experience the Perfect Accommodations for Unforgettable Journeys.",
+      founderName: "Vidusha Lakshan",
+      email: "vidushalakshanpersonal@gmail.com",
+      contactNumber: "0779300873",
+    },
+    {
+      title: "YohndY",
+      url: "https://yohndy.com/",
+      description:
+        "A simple platform that would track all communications, and audit logs and then do analytics and machine learning on it. YohndY, the premier app for all your home repair needs. With our user-friendly YohndY app, you can effortlessly connect with a reliable network of skilled professionals.",
+      founderName: "Ranjani",
+      email: "ranjanignanas@gmail.com",
+      contactNumber: "0762941415",
+    },
+    {
+      title: "T&P IoT",
+      url: "https://sites.google.com/view/tandpiot/about-us",
+      description:
+        "IoT home automation systems offer convenient centralized control, enhanced control through mobile apps or voice commands, energy efficiency by optimizing usage, increased security with smart locks and surveillance, home monitoring for safety, integration of devices from various manufacturers, and personalization through customization and adaptive automation.",
+      founderName: "P.M. Shian Rameesha Fernando",
+      email: "shianfernando438@gmail.com",
+      contactNumber: "0752005340",
+    },
+    {
+      title: "Netzee Global",
+      url: "https://netzee.lk/",
+      description:
+        "Netzee unlocks a world of incredible offers and exciting experiences that happens locally. It is a location-based information-sharing platform that supports instantaneous advertising, benefiting both local merchants and customers.",
+      founderName: "Pradeep Jayatilaka",
+      email: "prjayatilaka@gmail.com",
+      contactNumber: "+94773512391",
+    },
+    {
+      title: "Humanised Technology Solutions",
+      url: "https://www.gethumanised.com/",
+      description:
+        "Humanised Payroll is purpose-built to match the payroll process followed by payroll service providers while overcoming the typical challenges they face. Unlike generic payroll software, where the primary focus is handling internal company payroll efficiently, our solution understands the complexities and intricacies of handling multiple client payrolls concurrently.",
+      founderName: "Didulani Jayasinghe",
+      email: "didulani@humanised.ventures",
+      contactNumber: "+94 77 3820053/ +61 3 9917 8629",
+    },
+    {
+      title: "Adamas Peak",
+      url: "https://adamaspeak.com/",
+      description:
+        "creating an E Signature Platform, that people can sign agreements online, without the fear of getting scammed, By using a algorithm we detect scammers before the agreement done, so people can hire freelancers, buy properties, or sign NDA agreements,... without a mental stress, also through our platform people can find reliable service providers within the Sri Lanka making peoples everyday life lot easier.",
+      founderName: "M. Madilka Fernando",
+      email: "fernandomadilka@gmail.com",
+      contactNumber: "0761747532",
     },
   ];
 
@@ -107,19 +108,30 @@ export const CompanyIdeation = () => {
         renderItem={(item, index) => (
           <List.Item>
             <List.Item.Meta
-              avatar={<Avatar src={item.avatar} />}
-              title={<a href="https://ant.design">{item.title}</a>}
+              //   avatar={<Avatar src={item.avatar} />}
+              title={
+                <a target="_blank" rel="noreferrer" href={item.url}>
+                  {item.title}
+                </a>
+              }
               description={
                 <Row gutter={[18, 18]}>
-                  <Col xs={24} sm={24} md={20}>
+                  <Col
+                    xs={24}
+                    sm={24}
+                    md={20}
+                    style={{ maxHeight: "50px", overflow: "scroll" }}
+                  >
                     {item.description}
                   </Col>
                   <Col xs={24} sm={24} md={4}>
                     <Space>
-                      <IconText
-                        icon={HomeOutlined}
-                        key="list-vertical-star-o"
-                      />
+                      <a href={item.url} target="_blank" rel="noreferrer">
+                        <IconText
+                          icon={HomeOutlined}
+                          key="list-vertical-star-o"
+                        />
+                      </a>
                       <IconText
                         icon={LinkedinOutlined}
                         key="list-vertical-like-o"

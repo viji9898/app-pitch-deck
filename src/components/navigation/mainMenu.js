@@ -24,7 +24,7 @@ export const MainMenu = () => {
           style={{ textDecoration: "none" }}
           onClick={onClose}
         >
-          <Button shape="round">{"Discover"}</Button>
+          <Button shape="rounds">{"Discover"}</Button>
         </Link>
       ),
       key: "link1",

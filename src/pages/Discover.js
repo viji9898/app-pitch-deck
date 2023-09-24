@@ -1,8 +1,37 @@
-import { Button, Card, Col, Row, Tag } from "antd";
+import { Avatar, Button, Card, Col, Row, Tag } from "antd";
 import { Link } from "react-router-dom";
 import { CompanyIdeation } from "../components/discover/companiesIdeation";
+import { Disclaimer } from "../components/discover/disclaimer";
+import { companyData } from "../components/discover/companyData";
+import { useEffect, useState } from "react";
 
 export const Discover = () => {
+  const { Meta } = Card;
+  const [companyList, setCompanyList] = useState([
+    {
+      background: "",
+      companyLogo: "",
+      companyName: "",
+      description: "",
+      tags: [],
+
+      targetInvestment: "",
+      url: "",
+    },
+  ]);
+
+  //   const [companTag, setCompanyTag] = useState("");
+
+  useEffect(() => {
+    setCompanyList(companyData);
+  }, []);
+
+  const filterCompanyData = companyData.map((data) => {
+    return data.tags.filter((tag) => tag === "edTech");
+  });
+
+  console.log(filterCompanyData);
+
   const industryData = [
     {
       title: "AgroTech",
@@ -31,68 +60,63 @@ export const Discover = () => {
     return <Button>{data.title}</Button>;
   });
 
-  const companyData = [
-    {
-      background:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/pitch-deck/magic-bit/backbround-magic-bit-pitch-01.png",
-      companyLogo:
-        "https://media.licdn.com/dms/image/C510BAQGdffX7_5TAhQ/company-logo_200_200/0/1569659903356?e=1702512000&v=beta&t=UMo3TPekEgiE5CaJfSZewsWQta0ZHGnPMdEsIsctG6M",
-      companyName: "Magic Bit",
-      description:
-        "Magicbit provides STEM kits for kids to create 100+ innovative projects in coding, robotics, IoT & electronics with project based learning.",
-      industryTag: ["edTech"],
-      stageTag: ["Customer"],
-      targetInvestment: "US500,000",
-      url: "/in/dev-magic-bit",
-    },
-    {
-      background:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/placeholder-image-1050-390.png",
-      companyLogo:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/template/templete-logo.png",
-      companyName: "Immersive Smile",
-      description:
-        "In order to help people who are experiencing psychological pain and physical pain, through VR Cyber psychological Therapy.",
-      industryTag: ["healthTech"],
-      stageTag: ["customers"],
-      targetInvestment: "US50,000",
-      url: "/in/dev-immersive-smile",
-    },
-    {
-      background:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/pitch-deck/magic-bit/backbround-magic-bit-pitch-01.png",
-      companyLogo:
-        "https://media.licdn.com/dms/image/C510BAQGdffX7_5TAhQ/company-logo_200_200/0/1569659903356?e=1702512000&v=beta&t=UMo3TPekEgiE5CaJfSZewsWQta0ZHGnPMdEsIsctG6M",
-      companyName: "Magic Bit",
-      description:
-        "Magicbit provides STEM kits for kids to create 100+ innovative projects in coding, robotics, IoT & electronics with project based learning.",
-      industryTag: ["edTech"],
-      stageTag: ["Customer"],
-      targetInvestment: "US500,000",
-      url: "/in/dev-magic-bit",
-    },
-  ];
+  const listCompanyData = companyList.map((data) => {
+    const companyTags = data.tags;
 
-  const listCompanyData = companyData.map((data) => {
+    const listCompanyTag = companyTags.map((data) => {
+      return <Tag>{data}</Tag>;
+    });
+
     return (
       <Col xs={24} sm={24} md={8}>
         <Card
           extra={[]}
           actions={[
             `Ask: ${data.targetInvestment}`,
-            <Link to={data.url}>
-              <Button>Find Out More</Button>
-            </Link>,
+            <div>
+              {data.comingSoon ? (
+                <Button disabled>{"Coming Soon"}</Button>
+              ) : data.onPitchDeck ? (
+                <Link to={data.url}>
+                  <Button>Find Out More</Button>
+                </Link>
+              ) : (
+                <Button
+                  type="link"
+                  target="_blank"
+                  rel="noreferrer"
+                  href={data.url}
+                >
+                  Find Out More
+                </Button>
+              )}
+            </div>,
           ]}
           hoverable
           bordered
           cover={
-            <img alt="test" src={data.background} style={{ padding: "5px" }} />
+            <img
+              alt={data.altText}
+              src={data.background}
+              style={{ padding: "5px" }}
+            />
           }
         >
-          <p>{data.description}</p>
-          <Tag>{"edTech"}</Tag>
-          <Tag>{"Customer"}</Tag>
+          <Meta
+            avatar={
+              <Avatar
+                alt="company logo"
+                shape="square"
+                src={data.companyLogo}
+              />
+            }
+            title={data.companyName}
+          />
+          <br></br>
+          <div style={{ height: "100%" }}>
+            <p>{data.description}</p>
+            {listCompanyTag}
+          </div>
         </Card>
       </Col>
     );
@@ -101,10 +125,10 @@ export const Discover = () => {
   return (
     <div className="main" style={{ margin: "10px" }}>
       <Row gutter={[18, 18]} style={{ maxWidth: "1200px" }}>
-        <Col>
+        {/* <Col>
           <h2>Partners</h2>
           {"Acquity, Hatch, SLASSCOM, ICTA, LANKA ANGEL NETWORK, "}
-        </Col>
+        </Col> */}
         <Col span={24} style={{ textAlign: "left" }}>
           <h1>Ready to Seed!</h1>
           <p>
@@ -118,7 +142,9 @@ export const Discover = () => {
           {listIndustry}
         </Col>
         <Row gutter={[18, 18]}>{listCompanyData}</Row>
-
+        <Col span={24} style={{ textAlign: "center" }}>
+          <Button>{"View All"}</Button>
+        </Col>
         <Col span={24}>
           <h2> Ideation</h2>
           <p>
@@ -128,6 +154,7 @@ export const Discover = () => {
           </p>
         </Col>
         <CompanyIdeation />
+        <Disclaimer />
       </Row>
     </div>
   );

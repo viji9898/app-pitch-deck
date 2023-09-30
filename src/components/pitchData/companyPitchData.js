@@ -303,13 +303,14 @@ export const companyPitchData = [
     ],
 
     pitchMaterial: {
+      pitchVideo: false,
       mission: `"Revolutionize education!"`,
       pitchVideoDesktop: "https://player.vimeo.com/video/87110435?h=f253e737bd",
       pitchVideoMobie: "https://player.vimeo.com/video/829691380?h=fc6c6c52d9",
-      pitchVideoDesktop:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/viso-learn/viso-learn-v1.pdf",
-      pitchVideoMobie:
-        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/viso-learn/viso-learn-v1.pdf",
+      pitchSlidesDesktop:
+        "https://docs.google.com/presentation/d/e/2PACX-1vS3XUMviqj7FVGTIDVgTh0KCrxeM8ulLpGJbMqjSskhIPgLX2S4KaOV0D9kXM1h7A/embed?start=false&loop=false&delayms=3000",
+      pitchSlidesMobile:
+        "https://docs.google.com/presentation/d/e/2PACX-1vS3XUMviqj7FVGTIDVgTh0KCrxeM8ulLpGJbMqjSskhIPgLX2S4KaOV0D9kXM1h7A/embed?start=false&loop=false&delayms=3000",
     },
     interested: {
       companyName: "Your-Company-Name",

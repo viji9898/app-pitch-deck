@@ -435,6 +435,7 @@ export const companyPitchData = [
           type="info"
         />
       ),
+      pitchVideo: false,
       pitchVideoDesktop: "https://player.vimeo.com/video/87110435?h=f253e737bd",
       pitchVideoMobie: "https://player.vimeo.com/video/829691380?h=fc6c6c52d9",
       pitchSlidesDesktop:
@@ -665,6 +666,7 @@ export const companyPitchData = [
           type="info"
         />
       ),
+      pitchVideo: false,
       pitchVideoDesktop: "https://player.vimeo.com/video/87110435?h=f253e737bd",
       pitchVideoMobie: "https://player.vimeo.com/video/829691380?h=fc6c6c52d9",
       pitchSlidesDesktop:
@@ -839,6 +841,7 @@ export const companyPitchData = [
       ),
     },
     pitchMaterial: {
+      pitchVideo: true,
       mission: `"Let's Make IoT with Magic Bit"`,
       pitchVideoDesktop:
         "https://player.vimeo.com/video/861899903?h=7d2cbbdf68&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
@@ -1054,6 +1057,7 @@ export const companyPitchData = [
       ),
     },
     pitchMaterial: {
+      pitchVideo: false,
       mission: (
         <Alert
           message="Guidance:"
@@ -1305,6 +1309,7 @@ export const companyPitchData = [
       ),
     },
     pitchMaterial: {
+      pitchVideo: true,
       mission: (
         <Alert
           message="Guidance:"

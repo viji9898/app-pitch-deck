@@ -134,9 +134,9 @@ export const companyPitchData = [
     pitchMaterial: {
       mission: `"Our Mission: to upskill a nation!"`,
       pitchVideoDesktop:
-        "https://player.vimeo.com/video/857861963?h=9b6bbf4f86&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/viso-learn/viso-learn-v1.pdf",
       pitchVideoMobie:
-        "https://player.vimeo.com/video/858184804?h=5d33777548&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/viso-learn/viso-learn-v1.pdf",
       pitchSlidesDesktop:
         "https://docs.google.com/presentation/d/e/2PACX-1vTX1g-yLFKUAgxYA0-Pu_qsunpOHDkuk6eSZKooQIeLzXLefTMOe24JegSIesv9XztWwOkDvsJ9wYn3/embed?start=false&loop=false&delayms=3000",
       pitchSlidesMobile:
@@ -306,10 +306,10 @@ export const companyPitchData = [
       mission: `"Revolutionize education!"`,
       pitchVideoDesktop: "https://player.vimeo.com/video/87110435?h=f253e737bd",
       pitchVideoMobie: "https://player.vimeo.com/video/829691380?h=fc6c6c52d9",
-      pitchSlidesDesktop:
-        "https://docs.google.com/presentation/d/e/2PACX-1vQYZrL8VPm-J9I2Naru4_vm1uLc_TfV2-F1SLVQjoR1AuHnFHgo-V71aGymH4P4l7eL_b4eqdlIzTMb/embed?start=false&loop=false&delayms=3000",
-      pitchSlidesMobile:
-        "https://docs.google.com/presentation/d/e/2PACX-1vQczXbfp6UXW7WJo5m20PvlyWaUwrzivV92HIASDp58nilmL4c7_7AzRgrcTc-P533WRlTEyHfS3wen/embed?start=false&loop=false&delayms=3000",
+      pitchVideoDesktop:
+        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/viso-learn/viso-learn-v1.pdf",
+      pitchVideoMobie:
+        "https://customer-apps-techhq.s3.eu-west-2.amazonaws.com/app-pitch-deck/viso-learn/viso-learn-v1.pdf",
     },
     interested: {
       companyName: "Your-Company-Name",

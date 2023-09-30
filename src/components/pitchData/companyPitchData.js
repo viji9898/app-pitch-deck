@@ -265,20 +265,16 @@ export const companyPitchData = [
     },
     founderData: [
       {
-        name: "your name",
-        description: "Talk about yourself and your experience ",
-        linkedin: "https://www.linkedin.com/",
+        name: "Vinasirajan viruthshaan",
+        description:
+          "Electronics and Telecommunication Engineering Student at University of Moratuwa | YouTuber",
+        linkedin:
+          "https://www.linkedin.com/in/vinasirajan-viruthshaan-465a9119b/",
         facebook: false,
         twitter: "",
         social: "",
-        avatarUrl: "https://robohash.org/viji",
-      },
-      {
-        name: "CTO person",
-        description: "Talk about yourself and your experience ",
-        social: "",
-        linkedin: "https://www.linkedin.com/",
-        avatarUrl: "https://robohash.org/imran",
+        avatarUrl:
+          "https://media.licdn.com/dms/image/D5603AQE-z4hB2tI7sg/profile-displayphoto-shrink_200_200/0/1678277997507?e=1701302400&v=beta&t=0ceG9TDAqXqfa1xAa38nnRUsjiv5KNvOykCA_l3gnRU",
       },
     ],
     advisorData: [
@@ -313,10 +309,10 @@ export const companyPitchData = [
         "https://docs.google.com/presentation/d/e/2PACX-1vS3XUMviqj7FVGTIDVgTh0KCrxeM8ulLpGJbMqjSskhIPgLX2S4KaOV0D9kXM1h7A/embed?start=false&loop=false&delayms=3000",
     },
     interested: {
-      companyName: "Your-Company-Name",
+      companyName: "Viso Learn",
       discordWebhook:
         "https://discord.com/api/webhooks/1145414256167231629/RHTjlzabsk465D0gOk7PEbKy0c0DvCe9pPo-3fgrZ4KXIngREGIfcIWK34uwmi66Y703",
-      emailFounder: "hello@techforgood.lk",
+      emailFounder: "visolearn@gmail.com",
       backgroundColor: "#f2b823",
       companyLogo: "",
     },
